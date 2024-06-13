@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 /**
  * Decoration at the top of the Header.
@@ -22,4 +22,5 @@ export default function Ornament(): JSX.Element {
         </>
 
     );
+    
 }
