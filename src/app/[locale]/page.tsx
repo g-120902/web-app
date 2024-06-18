@@ -1,29 +1,16 @@
-"use client";
-
-import { checkLogin } from "@/utils/helper";
-import { useEffect, useState } from "react";
-import { Link } from '@/i18n/navigation';
+import { Metadata } from "next";
+import Play from "@/components/Play";
  
-export default function Home(): JSX.Element {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+export const metadata: Metadata = {
+  title: "Paragon Productions",
+  description: "This is Home page for Paragon Productions educational website"
+};
 
-  useEffect(() => {
-      setIsLoggedIn(checkLogin());
-  }, []);
+export default function Home(): JSX.Element {
 
   return (
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
-          <h1>The Paragon Game</h1>
-          {isLoggedIn ? (
-              <div>Play</div>
-          ) : (
-              <>
-                  <div>Play as Guest</div>
-                  <Link href = 'login'> <div>Log In</div> </Link>
-
-
-              </>
-          )}
+      <div>
+         <Play />
       </div>
   );
 
