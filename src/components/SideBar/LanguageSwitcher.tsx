@@ -10,7 +10,7 @@ import { GlobeAltIcon, ArrowDownRightIcon } from "@heroicons/react/24/outline";
 function LanguageBox({ lang, onClick }: { lang: Locale | undefined; onClick?: () => void }) {
     return (
         <div
-            className='flex justify-center text-sm hover:text-bubblegum underline p-2 h-6 text-center select-none hover:underline bg-skin-highlight rounded-xl px-2'
+            className='flex justify-center md:text-sm text-xs hover:text-bubblegum underline py-2 h-6 text-center select-none hover:underline md:px-2'
             onClick={onClick}>
                 <ArrowDownRightIcon className='h-4 w-4'/>
             {lang !== undefined ? localeNames[lang] : 'N/A'}
@@ -36,12 +36,12 @@ function LanguageSwitcher() {
     return (
         <div className='bg-transparent w-fit flex flex-col z-10 my-auto cursor-pointer text-neon '>
             <div
-                className={'flex ml-2 text-sm  gap-2 hover:text-bubblegum'}
+                className={'flex md:ml-2 md:text-sm text-xs gap-2 hover:text-bubblegum'}
                 onClick={open}>
-                <GlobeAltIcon className='h-6 w-6' />
+                <GlobeAltIcon className='md:h-6 md:w-6 h-4 w-4' />
                 {t("language")}
             </div>
-            <div className={selected ? 'ml-4 rounded-md bg-skin-primary flex flex-col' : 'hidden'}>
+            <div className={selected ? 'md:ml-4 ml-1 rounded-md bg-skin-primary flex flex-col' : 'hidden'}>
 
                 {locales.map((locale) => (
                     <div key={locale} onClick={() => handleTranslate(locale)}>
