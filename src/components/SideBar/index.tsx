@@ -9,6 +9,7 @@ import { useTranslations } from 'next-intl';
 import '@/utils/helper';
 import { Link } from '@/i18n/navigation';
 import { removeData } from '@/utils/storage';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function SideBar(): JSX.Element {
     const isLargeScreen = useMediaQuery({ query: '(min-width: 768px)' });
@@ -69,8 +70,12 @@ export default function SideBar(): JSX.Element {
                             isLargeScreen={isLargeScreen}
                         />
                     </Link>
+                    <div className='mt-60'>
+                    <LanguageSwitcher />
+
+                    </div>
                     <div
-                        className='whitespace-nowrap flex gap-2 text-sm text-neon hover:text-bubblegum cursor-pointer ml-2 mt-60'
+                        className='whitespace-nowrap flex gap-2 text-sm text-neon hover:text-bubblegum cursor-pointer ml-2'
                         onClick={logOut}>
                         <ArrowLeftEndOnRectangleIcon className="h-6 w-6" />
                         {t("logout")}
