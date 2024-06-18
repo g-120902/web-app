@@ -17,7 +17,7 @@ const SidebarItem: FC<SidebarItemProps> = ({ icon, text, isHovered, isLargeScree
                 className="text-lg select-none uppercase mx-4 whitespace-nowrap"
                 initial={{ display: "none" }}
                 animate={isHovered && isLargeScreen ? { display: "block" } : {}}
-                transition={{ duration: 0.3, ease: "easeIn" }}
+                transition={{ duration: 0.1, ease: "easeIn" }}
             >
                 {text}
             </motion.p>

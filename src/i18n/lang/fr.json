@@ -4,6 +4,8 @@
 
     },
     "side-bar": {
-      "home": "acueil"
+      "home": "accueil",
+      "login": "se connecter"
+
     }
 }

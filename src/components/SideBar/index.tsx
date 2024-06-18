@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import SidebarItem from './SideBarItem';
 import { useTranslations } from 'next-intl';
 import '@/utils/helper'; // Import your global helpers file
+import { Link } from '@/i18n/navigation';
 
 export default function SideBar(): JSX.Element {
     const isLargeScreen = useMediaQuery({ query: '(min-width: 768px)' });
@@ -16,17 +17,16 @@ export default function SideBar(): JSX.Element {
         setIsHovered(!isHovered);
     };
     const t = useTranslations("side-bar")
-
     useEffect(() => {
-       
-        if(CheckLogin()) {
+
+        if (CheckLogin()) {
             setIsLoggedIn("profile")
         }
         else {
             setIsLoggedIn("login")
         }
-      }, []);
-    
+    }, []);
+
     return (
         <>
             <motion.div
@@ -36,18 +36,24 @@ export default function SideBar(): JSX.Element {
                 onHoverEnd={handleHovered}
             >
                 <div className="bg-base-gray w-full h-full py-28 flex flex-col px-6 gap-6">
-                    <SidebarItem
-                        icon={<HomeIcon className="h-8 w-8" />}
-                        text={t("home")}
-                        isHovered={isHovered}
-                        isLargeScreen={isLargeScreen}
-                    />
-                    <SidebarItem
-                        icon={<UserCircleIcon className="h-8 w-8" />}
-                        text={t(isLoggedIn)}
-                        isHovered={isHovered}
-                        isLargeScreen={isLargeScreen}
-                    />
+                    <Link href={"/"}>
+
+                        <SidebarItem
+                            icon={<HomeIcon className="h-8 w-8" />}
+                            text={t("home")}
+                            isHovered={isHovered}
+                            isLargeScreen={isLargeScreen}
+                        />
+                    </Link>
+
+                    <Link href={isLoggedIn}>
+                        <SidebarItem
+                            icon={<UserCircleIcon className="h-8 w-8" />}
+                            text={t(isLoggedIn)}
+                            isHovered={isHovered}
+                            isLargeScreen={isLargeScreen}
+                        />
+                    </Link>
                 </div>
             </motion.div>
         </>

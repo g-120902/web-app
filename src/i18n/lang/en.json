@@ -4,6 +4,7 @@
 
     },
     "side-bar": {
-      "home": "home"
+      "home": "home",
+      "login": "log in"
     }
 }
