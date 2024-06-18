@@ -61,6 +61,9 @@ export default function SideBar(): JSX.Element {
             document.removeEventListener('mousedown', handleRetract);
         };
     },);
+    useEffect(() => {
+        setIsHovered(false)
+    },[isLargeScreen]);
     return (
         <>
             <motion.div
