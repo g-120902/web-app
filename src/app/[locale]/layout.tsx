@@ -2,6 +2,7 @@ import "@/css/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { NextIntlClientProvider, useMessages } from "next-intl";
+import SideBar from "@/components/SideBar";
 
 
 export default function RootLayout({
@@ -22,22 +23,13 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning={true} className='font-primary-normal overflow-x-clip'>
         <NextIntlClientProvider locale={params.locale} messages={messages}>
-
-          {/* <!-- ===== Header Start ===== --> */}
-          <Header />
-          {/* <!-- ===== Header End ===== --> */}
-
-          {/* <!-- ===== Main Content Start ===== --> */}
+          <SideBar />
           <main>
             <div>
               {children}
             </div>
           </main>
-          {/* <!-- ===== Main Content End ===== --> */}
 
-          {/* <!-- ===== Footer Start ===== --> */}
-          <Footer />
-          {/* <!-- ===== Footer End ===== --> */}
         </NextIntlClientProvider>
 
       </body>

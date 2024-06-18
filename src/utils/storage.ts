@@ -30,3 +30,6 @@ export function cacheData(data: any, cacheKey: string): void {
   localStorage.setItem(cacheKey, JSON.stringify(data));
 }
 
+export function removeData(cacheKey: string): void {
+  localStorage.removeItem(cacheKey);
+}

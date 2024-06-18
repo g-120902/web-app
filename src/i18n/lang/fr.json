@@ -2,5 +2,8 @@
   "header": {
     "title": "Voici le titre"
 
+    },
+    "side-bar": {
+      "home": "acueil"
     }
 }
