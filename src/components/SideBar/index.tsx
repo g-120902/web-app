@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, PanInfo } from 'framer-motion';
-import { HomeIcon, UserCircleIcon, ArrowLeftOnRectangleIcon, TrophyIcon } from '@heroicons/react/24/outline';
+import { HomeIcon, UserCircleIcon, ArrowLeftStartOnRectangleIcon, TrophyIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState } from 'react';
 import SidebarItem from './SideBarItem';
@@ -72,13 +72,15 @@ export default function SideBar(): JSX.Element {
                 onBlur={handleExpand}
             >
                 <motion.div
-                    className={`bg-base-gray h-full sm:hidden ${isExpanded ? 'hidden' : ''}`}
+                    className={`flex flex-col bg-base-gray h-full justify-center sm:hidden ${isExpanded ? 'hidden' : ''}`}
                     style={{ width: `${width}px` }}
                     onDrag={handleDrag}
                     onDragEnd={handleExpand}
                     drag={"x"}
                     dragConstraints={{ left: 0, right: 0 }}
-                ></motion.div>
+                >
+                    <ChevronRightIcon className='w-6 h-6 text-neon' />
+                </motion.div>
                 <div
                     className={`bg-base-gray w-full h-full py-48 sm:flex flex-col px-6 gap-6 ${isExpanded ? 'flex' : 'hidden'}`}
                 >
@@ -114,7 +116,7 @@ export default function SideBar(): JSX.Element {
                         className="whitespace-nowrap flex gap-2 md:text-sm text-xs text-neon hover:text-bubblegum cursor-pointer md:ml-2"
                         onClick={logOut}
                     >
-                        <ArrowLeftOnRectangleIcon className="md:h-6 md:w-6 h-4 w-4" />
+                        <ArrowLeftStartOnRectangleIcon className="md:h-6 md:w-6 h-4 w-4" />
                         {t('logout')}
                     </div>
                 </div>
