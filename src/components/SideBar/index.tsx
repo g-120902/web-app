@@ -89,6 +89,7 @@ export default function SideBar(): JSX.Element {
                 >
                     <Link href="/">
                         <SidebarItem
+        
                             icon={<HomeIcon className="md:h-8 md:w-8 h-5 w-5" />}
                             text={t('home')}
                             isHovered={isHovered}
