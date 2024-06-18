@@ -11,10 +11,10 @@ interface SidebarItemProps {
 
 const SidebarItem: FC<SidebarItemProps> = ({ icon, text, isHovered, isLargeScreen }) => {
     return (
-        <div className="px-6 flex justify-start items-center gap-3 w-full rounded-full border-neon border-2 p-2 text-neon hover:border-bubblegum hover:text-bubblegum">
+        <div className="cursor-pointer px-6 flex justify-center items-center gap-3 w-full rounded-full border-neon border-2 p-2 text-neon hover:border-bubblegum hover:text-bubblegum">
             {icon}
             <motion.p
-                className="text-lg select-none uppercase mx-4 whitespace-nowrap"
+                className="text-lg uppercase mx-4 whitespace-nowrap"
                 initial={{ display: "none" }}
                 animate={isHovered && isLargeScreen ? { display: "block" } : {}}
                 transition={{ duration: 0.1, ease: "easeIn" }}

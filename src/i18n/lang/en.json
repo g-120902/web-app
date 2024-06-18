@@ -5,6 +5,7 @@
     },
     "side-bar": {
       "home": "home",
-      "login": "log in"
+      "login": "log in",
+      "logout": "log out"
     }
 }
