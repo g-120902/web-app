@@ -32,7 +32,7 @@ export default function SideBar(): JSX.Element {
         else {
             setIsLoggedIn("login")
         }
-    }, [isLoggedIn]);
+    }, []);
 
     return (
         <>
