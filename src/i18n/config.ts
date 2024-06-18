@@ -14,3 +14,4 @@ export const localeCodes: Record<string, Locale> = {
     en: 'en',
     fr: 'fr',
 };
+
