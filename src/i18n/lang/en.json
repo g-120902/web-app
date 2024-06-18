@@ -6,6 +6,7 @@
     "side-bar": {
       "home": "home",
       "login": "log in",
-      "logout": "log out"
+      "logout": "log out",
+      "achievements": "achievements"
     }
 }

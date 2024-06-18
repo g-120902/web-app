@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion';
-import { HomeIcon, UserCircleIcon, ArrowLeftEndOnRectangleIcon } from '@heroicons/react/24/outline';
+import { HomeIcon, UserCircleIcon, ArrowLeftEndOnRectangleIcon, TrophyIcon } from '@heroicons/react/24/outline';
 import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState } from 'react';
 import SidebarItem from './SideBarItem';
@@ -57,6 +57,14 @@ export default function SideBar(): JSX.Element {
                         <SidebarItem
                             icon={<UserCircleIcon className="h-8 w-8" />}
                             text={t(isLoggedIn)}
+                            isHovered={isHovered}
+                            isLargeScreen={isLargeScreen}
+                        />
+                    </Link>
+                    <Link href={"/achievements"}>
+                        <SidebarItem
+                            icon={<TrophyIcon className="h-8 w-8" />}
+                            text={t("achievements")}
                             isHovered={isHovered}
                             isLargeScreen={isLargeScreen}
                         />

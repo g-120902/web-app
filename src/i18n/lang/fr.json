@@ -6,7 +6,8 @@
     "side-bar": {
       "home": "accueil",
       "login": "se connecter",
-      "logout":"se deconnecter"
+      "logout":"se deconnecter",
+      "achievements": "exploits"
 
     }
 }
