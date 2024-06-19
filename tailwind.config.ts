@@ -3,6 +3,9 @@ import type { Config } from 'tailwindcss'
 // MAIN COLORS
 const mainColors = {
   "default": "#AA4D47",
+  "base-gray": "#101112",
+  "neon": "#0f9992",
+  "bubblegum": "#d60b63"
 }
 
 const config: Config = {

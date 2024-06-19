@@ -2,5 +2,13 @@
   "header": {
     "title": "Voici le titre"
 
+    },
+    "side-bar": {
+      "home": "accueil",
+      "login": "se connecter",
+      "logout":"se deconnecter",
+      "achievements": "exploits",
+      "language": "langue"
+
     }
 }

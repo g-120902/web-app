@@ -1,6 +1,4 @@
-import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { Link } from "@/i18n/navigation";
 import Ornament from "./Ornament";
 import Title from "./Title";
 

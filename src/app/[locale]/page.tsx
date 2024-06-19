@@ -1,21 +1,17 @@
 import { Metadata } from "next";
-
+import Play from "@/components/Play";
+ 
 export const metadata: Metadata = {
-  title: "web-app",
+  title: "Paragon Productions",
+  description: "This is Home page for Paragon Productions educational website"
 };
 
-/**
- * A React component that renders the Home page.
- * @author Valentin magde <valentinmagde@gmail.com>
- * @since 2023-01-18
- *
- * @returns {JSX.Element} A React component.
- */
 export default function Home(): JSX.Element {
 
   return (
-    <div className="my-8 flex flex-col items-center gap-8">
+      <div>
+         <Play />
+      </div>
+  );
 
-    </div>
-  )
 }
