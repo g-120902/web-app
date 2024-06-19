@@ -10,6 +10,7 @@ import CustomButton from "../common/CustomButton";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { ExclamationCircleIcon } from "@heroicons/react/24/outline";
+import getUserinfo, { UserInfoResponse } from "../common/firebase/db/getUserInfo";
 
 /**
  * This contain the login page
@@ -39,7 +40,14 @@ export default function LogInForm(): JSX.Element {
             console.log(error);
             return;
         }
+        //sync auth with db using email.
+        const { docUser, err }: UserInfoResponse = await getUserinfo(email);
+        
+        //store them in local storage
         cacheData(result.user, "login");
+        if(docUser != null){
+            cacheData(docUser.data(),"userInfo")
+        }
         setLoggedIn(true)
         router.push('/');
 

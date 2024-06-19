@@ -13,7 +13,7 @@ export default function Play(): JSX.Element {
     const t = useTranslations("home")
     useEffect(() => {
         if (CheckLogin()) {
-            const userTokenString = localStorage.getItem('login')
+            const userTokenString = localStorage.getItem('userInfo')
             if (userTokenString) {
                 try {
                     const parsedToken = JSON.parse(userTokenString);
@@ -32,7 +32,7 @@ export default function Play(): JSX.Element {
     }, [isLoggedIn]);
  
     useEffect(() => {
-        setEmail(userTokenJson?.email)
+        setEmail(userTokenJson?.firstname)
     }, [userTokenJson]);
 
     return (
