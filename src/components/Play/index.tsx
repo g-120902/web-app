@@ -28,18 +28,61 @@ export default function Play(): JSX.Element {
     }, []);
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
-            <h1>The Paragon Game</h1>
-            {isLoggedIn && userTokenJson ? (
-                <div>
-                    Play as {userTokenJson.email}
-                </div>
-            ) : (
-                <>
-                    <div>Play as Guest</div>
-                    <Link href='login'> <div>Log In</div> </Link>
-                </>
-            )}
+        <div style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden' }}>
+            <video 
+                autoPlay 
+                muted 
+                loop 
+                style={{ 
+                    position: 'absolute', 
+                    width: '100%', 
+                    height: '100%', 
+                    top: '50%', 
+                    left: '50%', 
+                    transform: 'translate(-50%, -50%)', 
+                    objectFit: 'cover', 
+                    zIndex: '-1' 
+                }}
+            >
+                <source src="/assets/videos/BackgroundPlay.mp4" type="video/mp4" />
+                Hmm your browser does not support playback of videos! Sadge
+            </video>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', zIndex: '1', color: 'white' }}>
+                <h1>The Paragon Game</h1>
+                {isLoggedIn && userTokenJson ? (
+                    <div>
+                        Play as {userTokenJson.email}
+                    </div>
+                ) : (
+                    <>
+                        <div>
+                            <img className="button-img"  src="/assets/images/Guest.png" alt="Play as Guest" style={{ width: '170px', height: 'auto', cursor: 'pointer', marginBottom: '.1px' }} 
+ />
+                        </div>
+
+
+                        <Link href='login'> 
+                            <div> 
+                                <img  className="button-img" src="/assets/images/Login.png" alt="Log In"  style={{ width: '200px', height: 'auto', cursor: 'pointer' }} 
+ />
+                            </div> 
+                        </Link>
+                    </>
+                )}
+            </div>
+
+            <style jsx>{`
+    .button-img {
+        width: 150px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    .button-img:hover {
+        transform: scale(1.1);
+    }
+`}</style>
+
         </div>
     );
 }
