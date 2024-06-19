@@ -1,6 +1,7 @@
+import Login from "@/components/login";
 
 export default function LogIn(): JSX.Element {
     return (
-      <div className="flex w-full h-full justify-center" >Log In</div>
+      <Login></Login>
     )
   }
