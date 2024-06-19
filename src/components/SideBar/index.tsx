@@ -71,7 +71,7 @@ export default function SideBar(): JSX.Element {
     return (
         <>
             <motion.div
-                className="absolute top-0 left-0 h-full w-fit shadow-md shadow-black z-50 select-none flex bg-base-gray"
+                className="absolute top-0 left-0 h-full w-fit shadow-lg shadow-black z-50 select-none flex bg-base-gray"
                 whileHover={isHovered && isLargeScreen ? { minWidth: '13rem' } : {}}
                 style={dragging ?{ left: `${-width}px` } :{}}
                 onHoverStart={handleHovered}

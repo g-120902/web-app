@@ -9,8 +9,8 @@
       "play": "play",
       "login": "log in",
       "play-guest": "play as guest",
-      "not-connected": "Vous n'êtes pas connecté, voulez-vous",
-      "signup": "créer un compte ?"
+      "not-connected": "You are not connected, do you want to",
+      "signup": "create an account ?"
     },
     "login": {
       "password": "Password",

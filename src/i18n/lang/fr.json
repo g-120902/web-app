@@ -6,10 +6,10 @@
     "title": "Terminal d'e-learning",
     "welcome": "Bienvenu",
     "play": "jouer",
-    "login": "log in",
+    "login": "se connecter",
     "play-guest": "jouer sans compte",
-    "not-connected": "You are not connected, do you want to ",
-    "signup": "create an account ?"
+    "not-connected": "Vous n'êtes pas connecté, voulez-vous",
+    "signup": "créer un compte ?"
   },
   "login": {
     "password": "Mot de passe",
