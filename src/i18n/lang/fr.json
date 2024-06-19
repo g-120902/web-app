@@ -1,14 +1,29 @@
 {
   "header": {
     "title": "Voici le titre"
-
-    },
-    "side-bar": {
-      "home": "accueil",
-      "login": "se connecter",
-      "logout":"se deconnecter",
-      "achievements": "exploits",
-      "language": "langue"
-
-    }
+  },
+  "home": {
+    "title": "Terminal d'e-learning",
+    "welcome": "Bienvenu",
+    "play": "jouer",
+    "login": "log in",
+    "play-guest": "jouer sans compte",
+    "not-connected": "You are not connected, do you want to ",
+    "signup": "create an account ?"
+  },
+  "login": {
+    "password": "Mot de passe",
+    "email": "Adresse e-mail",
+    "signin": "Connexion",
+    "signup": "Créer un compte",
+    "incorrect-credentials": "Identifiants invalides"
+  },
+  "side-bar": {
+    "home": "accueil",
+    "profile": "profil",
+    "login": "se connecter",
+    "logout": "se deconnecter",
+    "achievements": "exploits",
+    "language": "langue"
+  }
 }

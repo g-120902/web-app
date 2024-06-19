@@ -10,14 +10,17 @@ import '@/utils/helper';
 import { Link } from '@/i18n/navigation';
 import { removeData } from '@/utils/storage';
 import LanguageSwitcher from './LanguageSwitcher';
+import { useAuth } from '@/context/AuthContext';
+import { checkLogin } from '@/utils/helper';
 
 export default function SideBar(): JSX.Element {
     const isLargeScreen = useMediaQuery({ query: '(min-width: 768px)' });
     const [isHovered, setIsHovered] = useState(false);
     const [isExpanded, setIsExpanded] = useState(false);
     const [dragging, setDragging] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState('login');
+    const [loginAction, setLoginAction] = useState('login');
     const [width, setWidth] = useState(28);
+    const { isLoggedIn, setLoggedIn } = useAuth();
 
     const handleHovered = () => {
         setIsHovered(!isHovered);
@@ -42,18 +45,19 @@ export default function SideBar(): JSX.Element {
 
     const logOut = () => {
         removeData('login');
-        setIsLoggedIn('login');
+        setLoginAction('login');
+        setLoggedIn(false)
     };
 
     const t = useTranslations('side-bar');
-
     useEffect(() => {
-        if (global.CheckLogin()) {
-            setIsLoggedIn('profile');
+        if (checkLogin()) {
+            setLoginAction('profile');
         } else {
-            setIsLoggedIn('login');
+          setLoginAction('login');
         }
-    }, []);
+      }, [isLoggedIn]);
+
     useEffect(() => {
         document.addEventListener('mousedown', handleRetract);
 
@@ -90,24 +94,24 @@ export default function SideBar(): JSX.Element {
                     <Link href="/">
                         <SidebarItem
         
-                            icon={<HomeIcon className="md:h-8 md:w-8 h-5 w-5" />}
+                            icon={<HomeIcon className="md:h-7 md:w-7 h-5 w-5" />}
                             text={t('home')}
                             isHovered={isHovered}
                             isLargeScreen={isLargeScreen}
                         />
                     </Link>
 
-                    <Link href={isLoggedIn}>
+                    <Link href={loginAction}>
                         <SidebarItem
-                            icon={<UserCircleIcon className="md:h-8 md:w-8 h-5 w-5" />}
-                            text={t(isLoggedIn)}
+                            icon={<UserCircleIcon className="md:h-7 md:w-7 h-5 w-5" />}
+                            text={t(loginAction)}
                             isHovered={isHovered}
                             isLargeScreen={isLargeScreen}
                         />
                     </Link>
                     <Link href="/achievements">
                         <SidebarItem
-                            icon={<TrophyIcon className="md:h-8 md:w-8 h-5 w-5" />}
+                            icon={<TrophyIcon className="md:h-7 md:w-7 h-5 w-5" />}
                             text={t('achievements')}
                             isHovered={isHovered}
                             isLargeScreen={isLargeScreen}
@@ -117,7 +121,7 @@ export default function SideBar(): JSX.Element {
                         <LanguageSwitcher />
                     </div>
                     <div
-                        className="whitespace-nowrap flex gap-2 md:text-sm text-xs text-neon hover:text-bubblegum cursor-pointer md:ml-2"
+                        className={`whitespace-nowrap flex gap-2 md:text-sm text-xs text-neon hover:text-bubblegum cursor-pointer md:ml-2 ${isLoggedIn ? '': 'hidden'}`}
                         onClick={logOut}
                     >
                         <ArrowLeftStartOnRectangleIcon className="md:h-6 md:w-6 h-4 w-4" />

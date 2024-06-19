@@ -3,8 +3,25 @@
     "title": "This is the title"
 
     },
+    "home": {
+      "title": "web learning terminal",
+      "welcome": "Welcome",
+      "play": "play",
+      "login": "log in",
+      "play-guest": "play as guest",
+      "not-connected": "Vous n'êtes pas connecté, voulez-vous",
+      "signup": "créer un compte ?"
+    },
+    "login": {
+      "password": "Password",
+      "email": "Email",
+      "signin": "Sign In",
+      "signup": "Create an account",
+      "incorrect-credentials": "Wrong email or password"
+    },
     "side-bar": {
       "home": "home",
+      "profile": "profile",
       "login": "log in",
       "logout": "log out",
       "achievements": "achievements",

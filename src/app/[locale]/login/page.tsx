@@ -1,7 +1,9 @@
-import Login from "@/components/login";
+import LogInForm from "@/components/LogInForm";
 
 export default function LogIn(): JSX.Element {
     return (
-      <Login></Login>
+      <section className="flex m-auto h-screen items-center justify-center">
+        <LogInForm />
+      </section>
     )
   }

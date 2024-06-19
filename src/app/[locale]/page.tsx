@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Play from "@/components/Play";
+import Play from "@/components/Home";
  
 export const metadata: Metadata = {
   title: "Paragon Productions",

@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import SideBar from "@/components/SideBar";
+import { AuthProvider } from "@/context/AuthContext";
 
 
 export default function RootLayout({
@@ -23,17 +24,19 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning={true} className='font-primary-normal overflow-x-clip'>
         <NextIntlClientProvider locale={params.locale} messages={messages}>
-          <SideBar />
-          <main>
-            <div>
-              {children}
-            </div>
-          </main>
+          <AuthProvider>
+
+            <SideBar />
+            <main>
+              <div>
+                {children}
+              </div>
+            </main>
+          </AuthProvider>
 
         </NextIntlClientProvider>
 
       </body>
-
-    </html>
+    </html >
   );
 }
