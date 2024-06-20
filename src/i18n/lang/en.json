@@ -26,5 +26,38 @@
       "logout": "log out",
       "achievements": "achievements",
       "language": "language"
+    },
+    "constant-level": {
+      "pixel-puff-dialogues":{
+        "introduction":"Our world is an ever changing one, but everything needs a balance. Some properties cannot be changed for if they are, great calamity will fall upon us",
+        "definitions":{
+          "first":"In the programming world, a constant is a value that, once defined, cannot be altered by the program during its execution.",
+          "second":"Constants are useful for values that need to be consistent and unchanging, ensuring reliability and predictability in the code"
+        },
+        "characteristics":{
+          "first":"Immutable: The primary characteristic of a constant is its immutability. Once a constant is assigned a value, it cannot be modified.",
+          "second":"Readability: Constants can make code more readable by giving descriptive names to fixed values, which can otherwise be confusing.",
+          "third":"Maintenance: Using constants makes code easier to maintain. If a value needs to be updated, it can be changed in one place rather than multiple locations in the code."
+        },
+        "examples":{
+          "first":"Here is how we define a constant",
+          "second":"It should have a name and a value assigned to it"
+        },
+        "exercices":{
+          "first":"Now try to create a constant using the items below",
+          "sucess":"Good Job",
+          "failure":"Try again"
+        },
+        "challenge":{
+          "first" : "Oh no what is happening!",
+          "second" :"Quick let's restore the gravity and make it constant",
+          "sucess" :"Good Job"
+
+        }
+      }
+    },
+    "achievements":{
+
+
     }
 }
