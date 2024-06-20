@@ -101,7 +101,7 @@ export default function SideBar(): JSX.Element {
                         />
                     </Link>
 
-                    <Link href={loginAction}>
+                    <Link href={"/"+loginAction}>
                         <SidebarItem
                             icon={<UserCircleIcon className="md:h-7 md:w-7 h-5 w-5" />}
                             text={t(loginAction)}

@@ -88,7 +88,7 @@ export default function LogInForm(): JSX.Element {
             >
                 <CustomButton text={t("signin")}/>
             </button>
-            <Link href="signup" className="flex w-full justify-end">
+            <Link href="/login/signup" className="flex w-full justify-end">
                 <p className="underline hover:text-bubblegum text-black font-primary-light mt-2">{t("signup")}</p>
             </Link>
             <div
