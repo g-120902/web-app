@@ -223,13 +223,13 @@
   },
     "achievements":{
 
-      "constant-achievement":"You are a constant learner",
-      "variable-achievement":"Changes are inevitable",
-      "loop-achievement":"",
-      "array-achievement":"",
-      "tree-achievement":"",
-      "queue-achievement":"",
-      "stack-achievement":""
+      "constant":"You are a constant learner",
+      "variable":"Changes are inevitable",
+      "loop":"loop a loop",
+      "array":"Array-tastic!",
+      "tree":"Tree-mendous! ",
+      "queue":"Queue-tiful!",
+      "stack":"Stack-tacular!"
 
 
     }
