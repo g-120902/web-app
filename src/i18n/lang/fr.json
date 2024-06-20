@@ -25,5 +25,195 @@
     "logout": "se deconnecter",
     "achievements": "exploits",
     "language": "langue"
-  }
+  },
+  "constant-level": {
+    "title": "Constantes",
+    "next-button": "Suivant",
+    "pixel-puff-dialogues": {
+        "introduction": "Notre monde est un monde en constante évolution, mais tout a besoin d'un équilibre. Certaines propriétés ne peuvent pas être modifiées comme la gravité",
+        "definitions": {
+            "first": "Dans le monde du programme, une constante est une valeur qui, une fois définie, ne peut pas être modifiée par le programme pendant son exécution.",
+            "second": "Les constantes sont utiles pour les valeurs qui doivent être cohérentes et invariables, ce qui garantit la fiabilité et la prévisibilité dans le code"
+        },
+        "explanations": {
+            "first": "Une fois une constante assignée une valeur, elle ne peut pas être modifiée.",
+            "second": "Voici comment nous définissons une constante",
+            "third": "Elle devrait avoir un nom et une valeur assignée à elle",
+            "fourth": "Oh non, qu'est-ce qui se passe!",
+            "fifth": "Voici, faisons de la constante de la gravité, elle ne peut pas être modifiée"
+        },
+        "challenge": {
+            "title": "Essayez de créer une constante en utilisant les éléments ci-dessous",
+            "sucess": "Bien joué!",
+            "failure": "Essayez à nouveau"
+        }
+    }
+},
+"variable-level": {
+    "title": "Variables",
+    "next-button": "Suivant",
+    "pixel-puff-dialogues": {
+        "introduction": "Imaginez une variable comme un petit coffre avec une étiquette. Vous pouvez mettre différentes choses à l'intérieur de ce coffre, et chaque fois que vous avez besoin d'utiliser ce qui est à l'intérieur, vous regardez simplement l'étiquette.",
+        "definitions": {
+            "first": "Les variables sont similaires aux constantes car elles nécessitent également un nom et une valeur. Cependant, contrairement aux constantes, leurs valeurs peuvent être modifiées"
+        },
+        "explanations": {
+            "first": "Nommer : Comme nous l'avons dit, le coffre nécessite une étiquette pour une identification appropriée.",
+            "second": "Nous ne pouvons pas simplement les nommer comme nous le voulons.",
+            "third": "Elle devrait avoir un nom et un type de données.",
+            "fourth": "Il existe également des styles que l'on peut utiliser : camelCaseNaming, snake_case_naming et PascalCaseNaming",
+            "fifth": "Les variables ont des types de données qui déterminent ce que elles peuvent stocker, comme des entiers, des flottants, des chaînes et des booléens",
+            "sixth": "Une fois une variable définie, elle peut être utilisée tout au long de votre code"
+        },
+        "challenge": {
+            "title": "Identifiez les variables correctes",
+            "sucess": "Correct :D",
+            "failure": "Essayez à nouveau, vous pouvez y arriver"
+        }
+    }
+},
+"loop-level": {
+    "title": "Boucles",
+    "next-button": "Suivant",
+    "pixel-puff-dialogues": {
+        "introduction": {
+            "first": "Imaginez un livre de sortilèges magique qui vous permet de répéter n'importe quelle action autant de fois que vous le souhaitez avec juste un commandement.",
+            "second": "Si vous voulez créer 10 biscuits, au lieu de dire 'Créez un biscuit' dix fois, vous pouvez utiliser votre sortilège pour le faire tout à la fois !"
+        },
+        "definitions": {
+            "first": "Dans le programme, ce sortilège s'appelle une boucle et nous l'utilisons pour répéter des actions.",
+            "second": "Il existe deux types de boucles, un boucle for et un boucle while",
+            "third": "Les boucles for sont utilisées lorsque nous savons à l'avance combien de fois nous devons répéter quelque chose.",
+            "fourth": "Les boucles while sont utilisées lorsque nous voulons répéter une action jusqu'à ce que quelque chose se produise"
+        },
+        "explanations": {
+            "first": "Commencer avec les boucles for. Imaginez que vous avez une liste de sortilèges et que vous voulez pratiquer chaque sortilège une fois. Une boucle for peut vous aider à passer en revue la liste et à pratiquer chaque sortilège.",
+            "second": "Ensuite, regardons les boucles while. Supposons que vous avez un sortilège qui dure jusqu'à ce que votre énergie se termine. Vous pouvez utiliser une boucle while pour continuer de lancer le sortilège tant que vous avez de l'énergie"
+        },
+        "challenge": {
+            "title": "Sélectionnez la boucle correcte à utiliser pour ajouter 10 pierres à la corbeille",
+            "sucess": "Correct :D",
+            "failure": "Essayez à nouveau, vous pouvez y arriver"
+        }
+    }
+},
+"array-level": {
+    "title": "Tableaux",
+    "next-button": "Suivant",
+    "pixel-puff-dialogues": {
+        "introduction": {
+            "first": "Imaginez un grand coffre qui peut contenir beaucoup de vos jouets préférés. Au lieu de les laisser éparpillés partout, vous pouvez les organiser dans ce coffre.",
+            "second": "Maintenant, imaginez que vous voulez trouver rapidement votre voiture de jeu préférée. Si tous vos jouets sont dans le coffre dans un ordre soigné, il est facile de trouver ce que vous cherchez."
+        },
+        "definitions": {
+            "first": "Ce coffre est comme un tableau dans le monde des ordinateurs.",
+            "second": "Un tableau est une structure de données qui peut stocker plusieurs valeurs dans une seule variable.",
+            "third": "Il a un index, qui est la clé, commençant par 0, et une valeur associée à chaque index.",
+            "fourth": "Les éléments peuvent être accédés en utilisant l'index"
+        },
+        "explanations": {
+            "first": "Ajouter : Lorsque vous obtenez un nouveau jouet, vous le placez simplement dans la prochaine place disponible dans votre coffre. Dans un tableau, vous pouvez ajouter de nouvelles valeurs à la fin de la liste.",
+            "second": "Supprimer : Si vous ne voulez plus un jouet, vous le prenez hors de votre coffre et le donnez à un ami. Dans un tableau, vous pouvez supprimer des éléments lorsque vous ne les avez plus besoin.",
+            "third": "Compter : Vous pourriez vouloir compter vos jouets ou les regarder tous pour décider lequel jouer.",
+            "fourth": "Dans un tableau, vous pouvez vérifier combien d'éléments vous avez et les regarder tous."
+        },
+        "challenge": {
+            "title": "Matchez les termes aux codes corrects",
+            "sucess": "Correct :D",
+            "failure": "Essayez à nouveau, vous pouvez y arriver"
+        }
+    }
+},
+"tree-level": {
+    "title": "Arbres",
+    "next-button": "Suivant",
+    "pixel-puff-dialogues": {
+        "introduction": {
+            "first": "Imaginez un arbre dans votre jardin. Il a un tronc robuste et beaucoup de branches, et chaque branche peut avoir des branches supplémentaires, des feuilles et peut-être même des fruits.",
+            "second": "C'est ce que ressemble un arbre de données dans le monde des ordinateurs !"
+        },
+        "definitions": {
+            "first": "Le tronc : Le tronc est comme le tronc de l'arbre. C'est le point de départ et il contient l'information la plus importante.",
+            "second": "Les nœuds : Chaque point sur l'arbre où les branches se divisent ou se terminent est appelé un nœud. Les nœuds contiennent des informations.",
+            "third": "Les branches (Édges) : Ces sont les lignes qui relient les nœuds, exactement comme les branches relient le tronc aux feuilles.",
+            "fourth": "Les feuilles : Ces sont les nœuds situés à la fin des branches. Ils ne n'ont pas de branches supplémentaires.",
+            "fifth": "Parent et enfant : Si un nœud est connecté directement à un autre en-dessous, le nœud supérieur est le parent et le nœud inférieur est l'enfant."
+        },
+        "explanations": {
+            "first": "Ajouter des informations : Comme vous pouvez ajouter des branches à un arbre, vous pouvez ajouter des informations à un arbre de données.",
+            "second": "Les nouveaux nœuds peuvent grandir à partir des nœuds existants, comme de nouvelles branches poussent à partir du tronc ou des branches.",
+            "third": "Trouver des informations : Si vous voulez trouver quelque chose dans l'arbre, vous commencez par le tronc et vous suivez les branches jusqu'au nœud approprié.",
+            "fourth": "Organiser des informations : Les arbres aident à organiser des informations de manière que les relations et les hiérarchies soient faciles à comprendre.",
+            "fifth": "Voici un exemple d'arbre pour les matières à l'école"
+        },
+        "challenge": {
+            "title": "Sélectionnez le nœud racine et un nœud feuille dans l'image ci-dessous",
+            "sucess": "Correct :D",
+            "failure": "Essayez à nouveau, vous pouvez y arriver"
+        }
+    }
+},
+"queue-level": {
+    "title": "Files",
+    "next-button": "Suivant",
+    "pixel-puff-dialogues": {
+        "introduction": {
+            "first": "Imaginez que vous attendez dans la file pour votre tour de monter sur la montagne russe à un parc d'attractions.",
+            "second": "Il y a une file de enfants enthousiastes, et chaque enfant attend patiemment son tour pour monter sur la montagne russe.",
+            "third": "Cette file d'attente est exactement comme une file dans le monde des ordinateurs !"
+        },
+        "definitions": {
+            "first": "File Definitions",
+            "second": "Front : Le début de la file, où le premier élément attend.",
+            "third": "Rear (ou Back) : La fin de la file, où les nouveaux éléments sont ajoutés.",
+            "fourth": "Enfile : Ajouter un élément à la fin de la file.",
+            "fifth": "Défile : Retirer un élément de la file."
+        },
+        "explanations": {
+            "first": "Joindre la file : Lorsque vous arrivez à la camionnette de glace, vous vous joignez à la fin de la file. C'est comme ajouter un élément à la fin de la file.",
+            "second": "Obtenir des services : Lorsque c'est votre tour à la camionnette de glace, vous allez à la file et obtenez votre glace. C'est comme retirer un élément de la file.",
+            "third": "Ordre important : Dans une file, l'ordre dans lequel vous vous joignez est l'ordre dans lequel vous obtiendrez des services. C'est équitable car tout le monde attend son tour."
+        },
+        "challenge": {
+            "title": "Sam doit attendre son tour pour obtenir des glaces, cliquez sur les personnes qui doivent être servies en premier dans l'ordre correct.",
+            "sucess": "Correct :D",
+            "failure": "Essayez à nouveau, vous pouvez y arriver"
+        }
+    }
+},
+"stack-level": {
+    "title": "Pile",
+    "next-button": "Suivant",
+    "pixel-puff-dialogues": {
+        "introduction": {
+            "first": "Imaginez que vous jouez avec une pile de blocs colorés. Vous commencez avec un bloc et vous ajoutez d'autres blocs au-dessus, créant une tour haute.",
+            "second": "Lorsque vous voulez prendre un bloc, vous prenez toujours le bloc en haut de la pile. Cette pile de blocs est exactement comme une pile dans le monde des ordinateurs !"
+        },
+        "definitions": {
+            "first": "Une pile est une façon d'organiser les choses où vous pouvez ajouter ou retirer des éléments uniquement de la partie supérieure.",
+            "second": "Haut : La fin de la pile où les éléments sont ajoutés ou retirés.",
+            "third": "Pousser : Ajouter un élément à la partie supérieure de la pile.",
+            "fourth": "Sortir : Retirer un élément de la partie supérieure de la pile."
+        },
+        "explanations": {
+            "first": "Ajouter des éléments (Pousser) : Lorsque vous ajoutez un nouveau bloc à votre pile, vous le placez toujours au-dessus du dernier bloc ajouté. Cela fait grandir votre tour.",
+            "second": "Prendre des éléments (Sortir) : Lorsque vous voulez prendre un bloc, vous prenez toujours le bloc en haut de la pile.",
+            "third": "Ordre important : Dans une pile, l'ordre dans lequel vous ajoutez et retirez des éléments est important. Vous travaillez toujours avec l'élément le plus récent en premier."
+        },
+        "challenge": {
+            "title": "Quel est le type de structure qui décrit une pile",
+            "sucess": "Correct :D",
+            "failure": "Essayez à nouveau, vous pouvez y arriver"
+        }
+    }
+},
+"achievements": {
+  "constant":"Vous êtes un apprenant constant",
+    "variable": "Les changements sont inévitables",
+    "loop": "Boucle à boucle",
+    "array": "Array-tastique!",
+    "tree": "Arbre-tremendable!",
+    "queue": "File-tifique!",
+    "stack": "Pile-tastique!"
+}
 }

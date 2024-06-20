@@ -222,6 +222,7 @@
     }
   },
     "achievements":{
+      "constant":"You are a constant learner",
       "variable":"Changes are inevitable",
       "loop":"loop a loop",
       "array":"Array-tastic!",
