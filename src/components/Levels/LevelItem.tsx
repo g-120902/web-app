@@ -11,8 +11,8 @@ export default function LevelItem({ text, icon }: LevelItemProps): JSX.Element {
 
     return (
         <div 
-            className="shadow-inner shadow-black cursor-pointer bg-base-white text-black hover:text-bubblegum border-neon border-2 hover:border-bubblegum rounded-md flex flex-col items-center justify-center p-4 min-h-64 h-fit gap-3">
-            <Image src={icon} alt={text} width={"80"} height={"80"} />
+            className="shadow-inner shadow-black cursor-pointer bg-base-white text-black hover:text-bubblegum border-neon border-2 hover:border-bubblegum rounded-md flex flex-col items-center justify-center p-4 min-h-24 h-fit gap-3">
+            <Image src={icon} alt={text} width={"90"} height={"90"} />
             <p>{t(text)}</p>
         </div>
     );
