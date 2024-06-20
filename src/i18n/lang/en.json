@@ -36,86 +36,199 @@
           "first":"In the programming world, a constant is a value that, once defined, cannot be altered by the program during its execution.",
           "second":"Constants are useful for values that need to be consistent and unchanging, ensuring reliability and predictability in the code"
         },
-        "characteristics":{
-          "first":"Immutable: The primary characteristic of a constant is its immutability. Once a constant is assigned a value, it cannot be modified.",
-          "second":"Readability: Constants can make code more readable by giving descriptive names to fixed values, which can otherwise be confusing.",
-          "third":"Maintenance: Using constants makes code easier to maintain. If a value needs to be updated, it can be changed in one place rather than multiple locations in the code."
-        },
-        "examples":{
-          "first":"Here is how we define a constant",
-          "second":"It should have a name and a value assigned to it"
-        },
-        "exercices":{
-          "first":"Now try to create a constant using the items below",
-          "sucess":"Good Job",
-          "failure":"Try again"
+        "explanations":{
+          "first":"Once a constant is assigned a value, it cannot be modified.",
+          "second":"Here is how we define a constant",
+          "third":"It should have a name and a value assigned to it",
+          "fourth":"Oh no what is happening!",
+          "fifth":"Here, let us make the gravity constant, it can't be changed"
         },
         "challenge":{
-          "first" : "Oh no what is happening!",
-          "second" :"Quick let's restore the gravity and make it constant",
-          "sucess" :"Good Job"
-
+          "title":"Now try to create a constant using the items below",
+          "sucess":"Good Job",
+          "failure":"Try again"
         }
       }
     },
     "variable-level":{
       "title":"Variables",
       "next-button":"next",
-      "level-one":{
-
-        "pixel-puff-dialogues":{
-          
-          "introduction":"Think of a variable as a special box with a label on it. You can put different things inside this box, and whenever you need to use what's inside, you just look at the label.",
-          "definitions":{
-            "first":"Variables are similar to constants as they also require a name and a value. However, unlike constants, their values can be changed"
-          },
-          "explanations":{
-            "first":"Naming: As we said the box needs to be labeled for proper identification.",
-            "second":"We cannot simply name them how we want. There is a proper way to name them",
-            "third":"A variable cannot start with a number nor have spaces in it. It may start with an underscore. The name is also case sensitive ",
-            "fourth":"A meaningful name so that we can know what kind of data is in it, not simply a or b for example",
-            "fifth":"There are also styles that can be used",
-            "sixth":"camelCaseNaming",
-            "seventh":"snake_case_naming",
-            "eigth":"PascalCaseNaming"
-          },
-          "challenge":{
-            "title":"Identify the correct variable name",
-            "sucess":"Correct :D",
-            "failure":"Try again, you can do it"
-          }
-        }
-      },
-      "level-two":{
-
-        "pixel-puff-dialogues":{
-
-          "introduction":"Different kind of contents can be placed inside a box",
-          "definitions":{
-            "first":"Variables have data types that determine what kind of data they can store",
-            "second":"Each variable can have a specific type",
-            "third":"Once a variable is defined, it can be used throughout your code"
-          },
-          "explanations":{
-            "first":"I will tell you about the basic types that can be defined",
-            "second":"Integers : whole numbers such as 1,2,3",
-            "third":"Float: Decimal numbers such as 1.1, 5.5 , 79.1",
-            "fourth":"String: data enclosed between double quotes",
-            "fifth":"Boolean: True or False"
-          },
-          "challenge":{
-            "title":"Assign the correct types",
-            "sucess":"You go champ",
-            "failure":"Try again, you can do it"
-          }
+      "pixel-puff-dialogues":{
+        
+        "introduction":"Think of a variable as a special box with a label on it. You can put different things inside this box, and whenever you need to use what's inside, you just look at the label.",
+        "definitions":{
+          "first":"Variables are similar to constants as they also require a name and a value. However, unlike constants, their values can be changed"
+        },
+        "explanations":{
+          "first":"Naming: As we said the box needs to be labeled for proper identification.",
+          "second":"We cannot simply name them how we want.",
+          "third":"It should have a proper name and a data type.",
+          "fourth":"There are also styles that can be used: camelCaseNaming, snake_case_naming and PascalCaseNaming",
+          "fifth":"Variables have data types that determine what kind of data they can store such as Integer, Float,String and Boolean",
+          "sixth":"Once a variable is defined, it can be used throughout your code"
+        },
+        "challenge":{
+          "title":"Identify the correct variables",
+          "sucess":"Correct :D",
+          "failure":"Try again, you can do it"
         }
       }
     },
-    "achievements":{
+    "loop-level":{
+      "title":"Loops",
+      "next-button":"next",
+      "pixel-puff-dialogues":{
+        "introduction":{
+          "first":"Imagine you have a magical spell book that lets you repeat any action as many times as you want with just one command. ",
+          "second":"If you want to cast a spell to create 10 cookies, instead of saying \"Create one cookie\" ten times, you can use your magical spell to do it all at once!"
+        },
+        "definitions":{
+          "first":"In programming this spell is called a loop and helps us to do things repeatedly",
+          "second":"There are two kinds of loop,a for loop and a while loop",
+          "third":"For Loops are when we know in advance how many times we need something",
+          "fourth":"While Loops are for when we want to repeat an action until something happens"
+        },
+        "explanations":{
+          "first":"Let's start with for loops. Imagine you have a list of spells and you want to practice each spell once. A for loop can help you go through the list and practice each one.",
+          "second":"Next, let's look at while loops. Suppose you have a spell that lasts until your energy runs out. You can use a while loop to keep casting the spell as long as you have energy"
+        },
+        "challenge":{
+          "title":"select the correct loop that should be used to add 10 stones to the basket",
+          "sucess":"Correct :D",
+          "failure":"Try again, you can do it"
+        }
+      }
+    },
 
-      "constant":"You are a constant learner",
-      "variable":"Changes are inevitable"
 
+
+    "array-level":{
+      "title":"Arrays",
+      "next-button":"next",
+      "pixel-puff-dialogues":{
+        "introduction":{
+          "first":"Imagine you have a big box that can hold lots of your favorite toys. Instead of having your toys scattered all over the place, you can keep them organized in this box.",
+          "second":"Now, let us say you want to find your favorite toy car quickly. If all your toys are in the box in a neat order, it is easy to find what you are looking for."
+        },
+        "definitions":{
+          "first":"This box is like an \"array\" in programming.",
+          "second":"An array is a data structure that can store multiple values in a single variable",
+          "third":"It has an index, that is the key, starting from 0 and a value associated with each index",
+          "fourth":"Items can be accessed using the index"
+        },
+        "explanations":{
+          "first":"Add: When you get a new toy, you just put it in the next available spot in your toy box. In an array, you can add new items to the end of the list.",
+          "second":"Remove: If you don't want a toy anymore, you take it out of your toy box and give it to a friend. In an array, you can remove items when you do not need them.",
+          "third":"Count: You might want to count your toys or look at them all to decide which one to play with. In an array, you can check how many items you have and look at all of them."
+        },
+        "challenge":{
+          "title":"Match the terms to the correct code",
+          "sucess":"Correct :D",
+          "failure":"Try again, you can do it"
+        }
+
+      }
+   },
+
+   "tree-level":{
+    "title":"Trees",
+    "next-button":"next",
+    "pixel-puff-dialogues":{
+      "introduction":{
+        "first":"Imagine a tree in your backyard. It has a big, strong trunk and lots of branches, and each branch might have more branches, leaves, and maybe even some fruits",
+        "second":"This is what a tree data structure looks like in the world of computers!"
+      },
+      "definitions":{
+        "first":"Root: The root is like the trunk of the tree. It's the starting point and holds the most important information.",
+        "second":"Nodes: Each point on the tree where the branches split or end is called a node. Nodes hold pieces of information.",
+        "third":"Branches (Edges): These are the lines that connect the nodes, just like branches connect the trunk to the leaves.",
+        "fourth":"Leaves: These are the nodes at the very end of the branches. They don't have any more branches coming out of them.",
+        "fifth":"Parent and Child: If one node is connected directly to another below it, the upper node is the parent, and the lower node is the child."
+      },
+      "explanations":{
+        "first":"Adding Information: Just like you can add more branches to a tree, you can add more information to a tree data structure.",
+        "second":"New nodes can grow from existing nodes, like new branches growing from the trunk or other branches.",
+        "third":"Finding Information: If you want to find something in the tree, you start at the root and follow the branches until you reach the right node",
+        "fourth":"Organizing Information: Trees help organize information in a way that makes it easy to see relationships and hierarchies.",
+        "fifth":"Below is an example of a tree for Subjects at school"
+      },
+      "challenge":{
+        "title":"Select the root and a leaf node in the image below",
+        "sucess":"Correct :D",
+        "failure":"Try again, you can do it"
+      }
 
     }
+  },
+
+
+  "queue-level":{
+    "title":"Queues",
+    "next-button":"next",
+    "pixel-puff-dialogues":{
+      "introduction":{
+        "first":"Imagine you're waiting in line for your turn to ride the roller coaster at an amusement park. ",
+        "second":"There's a line of excited kids, and each one waits patiently for their turn to hop on the coaster",
+        "third":"This waiting line is just like a queue in the world of computers!"
+      },
+      "definitions":{
+        "first":"Queue Definitions",
+        "second":"Front: The beginning of the line, where the first item is waiting.",
+        "third":"Rear (or Back): The end of the line, where new items are added.",
+        "fourth":"Enqueue: Adding an item to the rear of the queue.",
+        "fifth":"Dequeue: Removing an item from the front of the queue."
+      },
+      "explanations":{
+        "first":"Joining the Queue: When you arrive at the ice cream truck, you join the end of the line. This is like adding an item to the rear of the queue.",
+        "second":"Getting Served: When it's your turn at the ice cream truck, you go to the front of the line and get your ice cream. This is like removing an item from the front of the queue.",
+        "third":"Order Matters: In a queue, the order you join is the order you get served. It's fair because everyone waits their turn."
+
+      },
+      "challenge":{
+        "title":"Sam needs to wait for his turn to get ice cream, click on the people that needs to be served first in the correct order.",
+        "sucess":"Correct :D",
+        "failure":"Try again, you can do it"
+      }
+
+    }
+  },
+
+  "stack-level":{
+    "title":"Stack",
+    "next-button":"next",
+    "pixel-puff-dialogues":{
+      "introduction":{
+        "first":"Imagine you're playing with a stack of colorful blocks. You start with one block and keep adding more on top, creating a tall tower. ",
+        "second":"When you want to take a block away, you always take the top one first. This stack of blocks is just like a stack in the world of computers!"
+      },
+      "definitions":{
+        "first":"A stack is a way to organize things where you can only add or remove items from the top. ",
+        "second":"Top: The end of the stack where items are added or removed.",
+        "third":"Push: Adding an item to the top of the stack.",
+        "fourth":"Pop: Removing an item from the top of the stack."
+      },
+      "explanations":{
+        "first":"Adding Items (Push): When you add a new block to your stack, you always put it on top of the last block. This keeps your tower growing taller.",
+        "second":"Taking Items (Pop): When you want to take away a block, you always take the top one first. This way, you get the last block you added.",
+        "third":"Order Matters: In a stack, the order you add and remove items is important. You always work with the most recent item first."
+
+      },
+      "challenge":{
+        "title":"Which of the following structures describe a stack",
+        "sucess":"Correct :D",
+        "failure":"Try again, you can do it"
+      }
+
+    }
+  },
+    "achievements":{
+      "variable":"Changes are inevitable",
+      "loop":"loop a loop",
+      "array":"Array-tastic!",
+      "tree":"Tree-mendous! ",
+      "queue":"Queue-tiful!",
+      "stack":"Stack-tacular!"
+
+    }
+  
 }
