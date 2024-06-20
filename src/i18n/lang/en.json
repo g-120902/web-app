@@ -235,9 +235,11 @@
       "variable":"Changes are inevitable",
       "loop":"loop a loop",
       "array":"Array-tastic!",
-      "tree":"Tree-mendous! ",
+      "bianry_tree":"Tree-mendous! ",
       "queue":"Queue-tiful!",
-      "stack":"Stack-tacular!"
+      "stack":"Stack-tacular!",
+      "dictionary":"Dict-tastic!",
+      "linkedlist":"Linking Worlds"
 
     }
   
