@@ -174,8 +174,8 @@ export default function Constant({
                     </div>
                     <div className={`flex h-2/6 self-start select-none w-full gap-10 cursor-pointer ${currentImageIndex >2 ? `` : `hidden`}`}>
                         <Image src={images[currentImageIndex]} alt={"robot"} width={200} height={200} className="w-1/6 shadow-lg shadow-black"  onClick={handleTest(false)}/>
-                        <Image src={images[currentImageIndex+1]} alt={"robot"} width={200} height={200} className="w-1/6 shadow-lg shadow-black" onClick={handleTest(true)}/>
-                        <Image src={images[currentImageIndex+2]} alt={"robot"} width={200} height={200} className="w-1/6 shadow-lg shadow-black"  onClick={handleTest(false)}/>
+                        <Image src={images[currentImageIndex+1]} alt={"robot"} width={200} height={200} className="w-1/6 shadow-lg shadow-black" onClick={handleTest(false)}/>
+                        <Image src={images[currentImageIndex+2]} alt={"robot"} width={200} height={200} className="w-1/6 shadow-lg shadow-black"  onClick={handleTest(true)}/>
 
                     </div>
                 </div>
