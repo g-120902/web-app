@@ -63,10 +63,9 @@
           "first":"Naming: As we said the box needs to be labeled for proper identification.",
           "second":"We cannot simply name them how we want.",
           "third":"It should have a proper name and a data type.",
-          "fourth":"There are also styles that can be used to name the variable: camelCaseNaming, snake_case_naming and PascalCaseNaming",
-          "fifth":"There are also styles that can be used: camelCaseNaming, snake_case_naming and PascalCaseNaming",
-          "sixth":"Variables have data types that determine what kind of data they can store such as Integer, Float,String and Boolean",
-          "seventh":"Once a variable is defined, it can be used throughout your code"
+          "fourth":"There are also styles that can be used: camelCaseNaming, snake_case_naming and PascalCaseNaming",
+          "fifth":"Variables have data types that determine what kind of data they can store such as Integer, Float,String and Boolean",
+          "sixth":"Once a variable is defined, it can be used throughout your code"
         },
         "challenge":{
           "title":"Identify the correct variables",
@@ -99,8 +98,41 @@
           "failure":"Try again, you can do it"
         }
       }
-
     },
+
+
+
+    "array-level":{
+      "title":"Arrays",
+      "next-button":"next",
+      "pixel-puff-dialogues":{
+        "introduction":{
+          "first":"Imagine you have a big box that can hold lots of your favorite toys. Instead of having your toys scattered all over the place, you can keep them organized in this box.",
+          "second":"Now, let us say you want to find your favorite toy car quickly. If all your toys are in the box in a neat order, it is easy to find what you are looking for."
+        },
+        "definitions":{
+          "first":"This box is like an \"array\" in programming.",
+          "second":"An array is a data structure that can store multiple values in a single variable",
+          "third":"It has an index, that is the key, starting from 0 and a value associated with each index",
+          "fourth":"Items can be accessed using the index"
+        },
+        "explanations":{
+          "first":"Add: When you get a new toy, you just put it in the next available spot in your toy box. In an array, you can add new items to the end of the list.",
+          "second":"Remove: If you don't want a toy anymore, you take it out of your toy box and give it to a friend. In an array, you can remove items when you do not need them.",
+          "third":"Count: You might want to count your toys or look at them all to decide which one to play with. In an array, you can check how many items you have and look at all of them."
+        },
+        "challenge":{
+          "title":"Match the terms to the correct code",
+          "sucess":"Correct :D",
+          "failure":"Try again, you can do it"
+        }
+
+      }
+   },
+
+
+
+
     "achievements":{
 
       "constant-achievement":"You are a constant learner",
@@ -113,4 +145,5 @@
 
 
     }
+  
 }
