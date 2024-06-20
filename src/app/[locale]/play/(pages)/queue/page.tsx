@@ -1,6 +1,6 @@
 'use client';
 
-import LevelConstant from "@/components/LevelConstent";
+import LevelConstant from "@/components/LevelConstant";
 import { useTranslations } from "next-intl";
 
 export default function Constant() {

@@ -1,6 +1,6 @@
 'use client';
 
-import LevelConstant from "@/components/LevelConstent";
+import LevelConstant from "@/components/LevelConstant";
 import { useTranslations } from "next-intl";
 
 export default function Constant() {
@@ -16,10 +16,10 @@ export default function Constant() {
   const exThird = t("pixel-puff-dialogues.explanations.third");
   const exFourth = t("pixel-puff-dialogues.explanations.fourth");
   const exFifth = t("pixel-puff-dialogues.explanations.fifth");
+  const exSixth = t("pixel-puff-dialogues.explanations.sixth");
 
   const chalFirst = t("pixel-puff-dialogues.challenge.title");
   const chalSuccess = t("pixel-puff-dialogues.challenge.sucess");
-  const chalFailure = t("pixel-puff-dialogues.challenge.failure");
 
   return (
     <LevelConstant
@@ -31,9 +31,10 @@ export default function Constant() {
       exThird={exThird}
       exFourth={exFourth}
       exFifth={exFifth}
+      exSixth={exSixth}
+
       chalFirst={chalFirst}
       chalSuccess={chalSuccess}
-      chalFailure={chalFailure}
     />
   );
 }
