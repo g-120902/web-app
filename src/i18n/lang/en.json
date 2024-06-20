@@ -44,7 +44,7 @@
           "fifth":"Here, let us make the gravity constant, it can't be changed"
         },
         "challenge":{
-          "first":"Now try to create a constant using the items below",
+          "title":"Now try to create a constant using the items below",
           "sucess":"Good Job",
           "failure":"Try again"
         }
@@ -139,10 +139,10 @@
         "second":"This is what a tree data structure looks like in the world of computers!"
       },
       "definitions":{
-        "first":"Root: The root is like the trunk of the tree. It’s the starting point and holds the most important information.",
+        "first":"Root: The root is like the trunk of the tree. It's the starting point and holds the most important information.",
         "second":"Nodes: Each point on the tree where the branches split or end is called a node. Nodes hold pieces of information.",
         "third":"Branches (Edges): These are the lines that connect the nodes, just like branches connect the trunk to the leaves.",
-        "fourth":"Leaves: These are the nodes at the very end of the branches. They don’t have any more branches coming out of them.",
+        "fourth":"Leaves: These are the nodes at the very end of the branches. They don't have any more branches coming out of them.",
         "fifth":"Parent and Child: If one node is connected directly to another below it, the upper node is the parent, and the lower node is the child."
       },
       "explanations":{
@@ -159,10 +159,39 @@
       }
 
     }
- },
+  },
 
 
+  "queue-level":{
+    "title":"Queues",
+    "next-button":"next",
+    "pixel-puff-dialogues":{
+      "introduction":{
+        "first":"Imagine you're waiting in line for your turn to ride the roller coaster at an amusement park. ",
+        "second":"There's a line of excited kids, and each one waits patiently for their turn to hop on the coaster",
+        "third":"This waiting line is just like a queue in the world of computers!"
+      },
+      "definitions":{
+        "first":"Queue Definitions",
+        "second":"Front: The beginning of the line, where the first item is waiting.",
+        "third":"Rear (or Back): The end of the line, where new items are added.",
+        "fourth":"Enqueue: Adding an item to the rear of the queue.",
+        "fifth":"Dequeue: Removing an item from the front of the queue."
+      },
+      "explanations":{
+        "first":"Joining the Queue: When you arrive at the ice cream truck, you join the end of the line. This is like adding an item to the rear of the queue.",
+        "second":"Getting Served: When it's your turn at the ice cream truck, you go to the front of the line and get your ice cream. This is like removing an item from the front of the queue.",
+        "third":"Order Matters: In a queue, the order you join is the order you get served. It's fair because everyone waits their turn."
 
+      },
+      "challenge":{
+        "title":"Sam needs to wait for his turn to get ice cream, click on the people that needs to be served first in the correct order.",
+        "sucess":"Correct :D",
+        "failure":"Try again, you can do it"
+      }
+
+    }
+  },
     "achievements":{
 
       "constant-achievement":"You are a constant learner",
