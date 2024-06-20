@@ -4,6 +4,11 @@ import { checkLogin } from '@/utils/helper';
 import { cacheData } from '@/utils/storage';
 import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 
+type Achievement = {
+    name: string;
+    status: boolean;
+  };
+
 type AchievementState = {
     constant: boolean;
     variable: boolean;
@@ -47,9 +52,7 @@ export const AchievementProvider: React.FC<{ children: ReactNode }> = ({ childre
 
     const setAchievement = (key: keyof AchievementState, value: boolean) => {
         setAchievements((prev) => {
-            localStorage.removeItem('achievements')
             const newAchievements = { ...prev, [key]: value };
-            cacheData(newAchievements, 'achievements');
             return newAchievements;
         });
     };
@@ -78,17 +81,39 @@ export const AchievementProvider: React.FC<{ children: ReactNode }> = ({ childre
 
     useEffect(() => {
         const calculateScore = () => {
-            let newScore = 0;
-            Object.keys(achievements).forEach((key) => {
-                if (achievements[key as keyof AchievementState]) {
-                    newScore += 1;
-                }
-            });
-            setScore(newScore);
+          let newScore = 0;
+          Object.keys(achievements).forEach((key) => {
+            if (achievements[key as keyof AchievementState]) {
+              newScore += 1;
+            }
+          });
+          setScore(newScore);
         };
-
+    
         calculateScore();
-    }, [achievements]);
+      }, [achievements]);
+    
+      useEffect(() => {
+        const dataString = localStorage.getItem('achievements');
+        if (dataString) {
+          try {
+            const data = JSON.parse(dataString);
+    
+            if (typeof data === 'object' && data !== null && !Array.isArray(data)) {
+              setAchievements((prev) => ({
+                ...prev,
+                ...data,
+              }));
+              cacheData(achievements, 'achievements')
+
+            } else {
+              console.error("Data retrieved from localStorage is not an object.");
+            }
+          } catch (error) {
+            console.error("Failed to parse data from localStorage:", error);
+          }
+        }
+      }, []);
 
     return (
         <AchievementContext.Provider value={{ achievements, setAchievement, score }}>
