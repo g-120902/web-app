@@ -5,6 +5,7 @@ import { ArrowRightCircleIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
+import { useAchievements } from "@/context/AchievementContext";
 
 type LevelConstantProps = {
     intro: string;
@@ -58,6 +59,7 @@ export default function Constant({
     const [currentImageIndex, setCurrentImageIndex] = useState(-1);
     const [achievementDisplay, setAchievementDisplay] = useState(false);
     const [stopDisplay, setStopDisplay] = useState(false);
+    const { setAchievement } = useAchievements();
 
     const t = useTranslations("achievements")
 
@@ -85,6 +87,7 @@ export default function Constant({
             setCurrentTextIndex((prevIndex) => {
                 const nextIndex = (prevIndex + 1) % texts.length;
                 setCurrentImageIndex(-1);
+                setAchievement("constant", true)
                 setAchievementDisplay(true)
                 setStopDisplay(false)
                 return nextIndex;
