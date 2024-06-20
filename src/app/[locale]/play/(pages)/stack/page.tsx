@@ -19,7 +19,7 @@ export default function Constant() {
   const exSecond = t("pixel-puff-dialogues.explanations.second");
   const exThird = t("pixel-puff-dialogues.explanations.third");
 
-  const chalFirst = t("pixel-puff-dialogues.challenge.first");
+  const chalFirst = t("pixel-puff-dialogues.challenge.title");
   const chalSuccess = t("pixel-puff-dialogues.challenge.sucess");
   const chalFailure = t("pixel-puff-dialogues.challenge.failure");
 
