@@ -1,0 +1,243 @@
+{
+    "header": {
+      "title": "sa se ene tit"
+  
+      },
+      "home": {
+        "title": "web learning terminal",
+        "welcome": "Bienveni",
+        "play": "zwe",
+        "login": "log in",
+        "play-guest": "zwe comme inviter",
+        "not-connected": "to pas connecte, to envi?",
+        "signup": "cre ene account ?"
+      },
+      "login": {
+        "password": "Password",
+        "email": "Email",
+        "signin": "Sign In",
+        "signup": "cre ene account",
+        "incorrect-credentials": "Email ou password pas bon"
+      },
+      "side-bar": {
+        "home": "home",
+        "profile": "profil",
+        "login": "log in",
+        "logout": "log out",
+        "achievements": "exploits",
+        "language": "langaz"
+      },
+      "levels": {
+        "constant": "Constants",
+        "variable":"Variab",
+        "loop":"Loop",
+        "array":"Array",
+        "tree":"Pie",
+        "queue":"Lake",
+        "stack":"Stack"
+      },
+      "constant-level": {
+        "title":"Constants",
+        "next-button":"suivan",
+        "pixel-puff-dialogues":{
+          "introduction":"Nou lemond ress sanzer, me bizin balance. Ena zafer pas kav sanzer couma gravite",
+          "definitions":{
+            "first":"Dan programmation, constant se ene valer ki pas kav sanze ene fois ki li finn cre.",
+            "second":"Bann Constants itil pou ban valer ki bisin ress consisten, pou ki code la ress fiab"
+          },
+          "explanations":{
+            "first":"Ene fois met ene valer, pas kav modifie",
+            "second": "Nu cree ene constant coumsa",
+            "third": "Bisin ena ene nom ek ene valer",
+            "fourth": "Mon define gravite coumsa, ene zafer importan pou zot humain.",
+            "fifth": "Gete mo papa bisin ress lor sali",
+            "sixth": "Gete couma li contant ar mo constant"
+          },
+          "challenge":{
+            "title":"Esseye bouz mo papa",
+            "sucess":"Bien seye me, selma constant pas kav modifie."
+          }
+        }
+      },
+      "variable-level":{
+        "title":"Variab",
+        "next-button":"next",
+        "pixel-puff-dialogues":{
+          
+          "introduction":"Variab se enn boite ar ene nom lor la. To kav met differen zafer dans boite la, ek kan to bisin kitsoz depi ene boite to zis gete nom la.",
+          "definitions":{
+            "first":"Variab impe coumsa constant. Selma zot valer kav sanze"
+          },
+          "explanations":{
+            "first":"Nomme: Boite la bisin ene bon nom",
+            "second":"Pas kav servi nimporte ki nom",
+            "third":"Bisin ena enn bon nom ek enn bon type data",
+            "fourth":"Ena impe styl kav servi: camelCaseNaming, snake_case_naming ek PascalCaseNaming",
+            "fifth":"Viariab ena differen type pou kone ki li kav garde couma Integer, Float,String ek Boolean",
+            "sixth":"Ene foi defini to kav servi li partou"
+          },
+          "challenge":{
+            "title":"Indentifie variab correct la",
+            "sucess":"Correct :D",
+            "failure":"Refer :)"
+          }
+        }
+      },
+      "loop-level":{
+        "title":"Loops",
+        "next-button":"next",
+        "pixel-puff-dialogues":{
+          "introduction":{
+            "first":"Imagine you have a magical spell book that lets you repeat any action as many times as you want with just one command. ",
+            "second":"If you want to cast a spell to create 10 cookies, instead of saying \"Create one cookie\" ten times, you can use your magical spell to do it all at once!"
+          },
+          "definitions":{
+            "first":"In programming this spell is called a loop and helps us to do things repeatedly",
+            "second":"There are two kinds of loop,a for loop and a while loop",
+            "third":"For Loops are when we know in advance how many times we need something",
+            "fourth":"While Loops are for when we want to repeat an action until something happens"
+          },
+          "explanations":{
+            "first":"Let's start with for loops. Imagine you have a list of spells and you want to practice each spell once. A for loop can help you go through the list and practice each one.",
+            "second":"Next, let's look at while loops. Suppose you have a spell that lasts until your energy runs out. You can use a while loop to keep casting the spell as long as you have energy"
+          },
+          "challenge":{
+            "title":"select the correct loop that should be used to add 10 stones to the basket",
+            "sucess":"Correct :D",
+            "failure":"Try again, you can do it"
+          }
+        }
+      },
+  
+  
+  
+      "array-level":{
+        "title":"Arrays",
+        "next-button":"next",
+        "pixel-puff-dialogues":{
+          "introduction":{
+            "first":"Imagine you have a big box that can hold lots of your favorite toys. Instead of having your toys scattered all over the place, you can keep them organized in this box.",
+            "second":"Now, let us say you want to find your favorite toy car quickly. If all your toys are in the box in a neat order, it is easy to find what you are looking for."
+          },
+          "definitions":{
+            "first":"This box is like an \"array\" in programming.",
+            "second":"An array is a data structure that can store multiple values in a single variable",
+            "third":"It has an index, that is the key, starting from 0 and a value associated with each index",
+            "fourth":"Items can be accessed using the index"
+          },
+          "explanations":{
+            "first":"Add: When you get a new toy, you just put it in the next available spot in your toy box. In an array, you can add new items to the end of the list.",
+            "second":"Remove: If you don't want a toy anymore, you take it out of your toy box and give it to a friend. In an array, you can remove items when you do not need them.",
+            "third":"Count: You might want to count your toys or look at them all to decide which one to play with. In an array, you can check how many items you have and look at all of them."
+          },
+          "challenge":{
+            "title":"Match the terms to the correct code",
+            "sucess":"Correct :D",
+            "failure":"Try again, you can do it"
+          }
+  
+        }
+     },
+  
+     "tree-level":{
+      "title":"Pie",
+      "next-button":"next",
+      "pixel-puff-dialogues":{
+        "introduction":{
+          "first":"Imazin ena ene pie dans to zardin. Li ena buku brans, fei ek fri",
+          "second":"Coumsa em data structure Tree paret lor to computer!"
+        },
+        "definitions":{
+          "first":"Root: Tron pie la sa. Laba em li coumanse ek ena detailpli importan laba",
+          "second":"Nodes: Sak point cot enn brans separe se ene node. Nodes ena ban informasion",
+          "third":"Branches (Edges): saem ban branss ki connecte ar ban nodes, parey couma brans connec tron ar fei",
+          "fourth":"Leaves: se ban node ki a la fin. Branss pas sorti ar zot.",
+          "fifth":"Parent ek zenfant: si ene node ena ene connection direk laho li, tseki laho la se parent, enba la se zenfant."
+        },
+        "explanations":{
+          "first":"Azoute Informasion: kapav azout infoemasion lor ene tree data structure.",
+          "second":"kav gagn nouvo node depi ancien node, parey couma branss pouss depi lezot branss",
+          "third":"Rod Informasion: Si bisin kitsoz lor pis, commence lor root lerla aller em suive ban branss ziska gagne bon node",
+          "fourth":"Organize Informasion: Pie aider pou trouve ban relation ek ban hierarchi.",
+          "fifth":"Enba ena enn example pou enn pie pou ban Size dan lekol"
+        },
+        "challenge":{
+          "title":"Soizir root ek leave lor pie emba la",
+          "sucess":"Correct :D",
+          "failure":"Refer"
+        }
+  
+      }
+    },
+  
+  
+    "queue-level":{
+      "title":"Lake",
+      "next-button":"next",
+      "pixel-puff-dialogues":{
+        "introduction":{
+          "first":"Zot pe attan zot tour pou mont lor manez dans parc. ",
+          "second":"Ena enn lalign zanfan, ek saken pe attan zot tour pou mont lor manez",
+          "third":"Se ene laligne parey couma ene lake dans computer !"
+        },
+        "definitions":{
+          "first":"Definision dans ban lake",
+          "second":"Front: laba eme coumansemen, cot premier dimun item pe atan",
+          "third":"Rear: TPar deriere lake.",
+          "fourth":"Enqueue: Kan azout item par deriere lake.",
+          "fifth":"Dequeue: Kan tire item par divant lake"
+        },
+        "explanations":{
+          "first":"Rentre dan lake: Kan to arrive kot camion laglas, to rentre depi parderiere. Sa se enqueue",
+          "second":"Servi toi: Kan arrive to tour to par divant. Sa se dequeue",
+          "third":"Lord ena linportans: Dans ene lake seki vin avant sorti avant. Saken atta so tour"
+  
+        },
+        "challenge":{
+          "title":"Sam bisin attan so tour pou gagn laglass, click lor dimoun ki bisin aller avant li",
+          "sucess":"Correct :D",
+          "failure":"Refer :)"
+        }
+  
+      }
+    },
+  
+    "stack-level":{
+      "title":"Stack",
+      "next-button":"next",
+      "pixel-puff-dialogues":{
+        "introduction":{
+          "first":"To pe zwe ar ene ta brik couler. To coumanse par ene ek to ress azoute laho, pou fer ene latour. ",
+          "second":"Kan to envi tir ene brik, to pren net seki laho net. Saem appel ene stack!"
+        },
+        "definitions":{
+          "first":"Ene stack se enn facon kot to kav zis azoute ek retirer depi laho. ",
+          "second":"Top: Lafin stack kot azouter ek retire item.",
+          "third":"Push: Azoute laho.",
+          "fourth":"Pop: Retir depi laho."
+        },
+        "explanations":{
+          "first":"Azoute Items (Push): Kan to azoute ene nouvo brik, to met li laho net. Latour ress grandi.",
+          "second":"RetireItems (Pop): WLan to tir brik, To tir zis seki laho. To gagn dernier seki ton azoute.",
+          "third":"Lord ena linportans: Tous le temp dernier rentrer ki premier sorti"
+  
+        },
+        "challenge":{
+          "title":"Lakel represent enn stack",
+          "sucess":"Correct :D",
+          "failure":"Refer :)"
+        }
+  
+      }
+    },
+      "achievements":{
+        "constant":"To ress constamen appran",
+        "variable":"Sanzemen ress vini",
+        "loop":"Tourne tourne",
+        "array":"Array-tastik!",
+        "tree":"Pie-ni ",
+        "queue":"Long Lake!",
+        "stack":"StackMan"
+      }
+    
+  }

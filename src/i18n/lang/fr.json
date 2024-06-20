@@ -26,6 +26,15 @@
     "achievements": "exploits",
     "language": "langue"
   },
+  "levels": {
+    "constant": "Constantes",
+    "variable":"Variables",
+    "loop":"Boucles",
+    "array":"Tableaux",
+    "tree":"Arbres",
+    "queue":"Files",
+    "stack":"Piles"
+  },
   "constant-level": {
     "title": "Constantes",
     "next-button": "Suivant",
@@ -39,13 +48,13 @@
             "first": "Une fois une constante assignée une valeur, elle ne peut pas être modifiée.",
             "second": "Voici comment nous définissons une constante",
             "third": "Elle devrait avoir un nom et une valeur assignée à elle",
-            "fourth": "Oh non, qu'est-ce qui se passe!",
-            "fifth": "Voici, faisons de la constante de la gravité, elle ne peut pas être modifiée"
+            "fourth": "Voici comment j'ai défini la gravité, une propriété physique essentielle pour vous humains.",
+            "fifth": "Tu vois mon père en a besoin pour rester au sol",
+            "sixth": "Regardez-le s'amuser avec ma constante"
         },
         "challenge": {
-            "title": "Essayez de créer une constante en utilisant les éléments ci-dessous",
-            "sucess": "Bien joué!",
-            "failure": "Essayez à nouveau"
+            "title": "Essayez maintenant de déplacer mon père.",
+            "sucess": "Bon essai mais en fait, les constantes sont déclarées et ne peuvent pas être modifiées."
         }
     }
 },
