@@ -36,15 +36,12 @@
           "first":"In the programming world, a constant is a value that, once defined, cannot be altered by the program during its execution.",
           "second":"Constants are useful for values that need to be consistent and unchanging, ensuring reliability and predictability in the code"
         },
-        "characteristics":{
-          "first":"Once a constant is assigned a value, it cannot be modified."
-        },
-        "examples":{
-          "first":"Here is how we define a constant",
-          "second":"It should have a name and a value assigned to it",
-          "third":"Oh no what is happening!",
-          "fourth":"Here, let us make the gravity constant, it can't be changed"
-
+        "explanations":{
+          "first":"Once a constant is assigned a value, it cannot be modified.",
+          "second":"Here is how we define a constant",
+          "third":"It should have a name and a value assigned to it",
+          "fourth":"Oh no what is happening!",
+          "fifth":"Here, let us make the gravity constant, it can't be changed"
         },
         "challenge":{
           "first":"Now try to create a constant using the items below",
