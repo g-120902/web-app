@@ -44,7 +44,9 @@ export default function SideBar(): JSX.Element {
     };
 
     const logOut = () => {
+        removeData('achievements')
         removeData('login');
+        removeData('userInfo')
         setLoginAction('login');
         setLoggedIn(false)
     };

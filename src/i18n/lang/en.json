@@ -113,8 +113,8 @@
     },
     "achievements":{
 
-      "constant-achievement":"You are a constant learner",
-      "variable-achievement":"Changes are inevitable"
+      "constant":"You are a constant learner",
+      "variable":"Changes are inevitable"
 
 
     }
