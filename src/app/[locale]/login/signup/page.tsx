@@ -1,6 +1,9 @@
+import SignUpForm from "@/components/SignUpForm";
 
 export default function SignUp(): JSX.Element {
     return (
-      <div className="flex w-full h-full justify-center">Sign Up</div>
+      <section className="flex m-auto h-screen items-center justify-center">
+        <SignUpForm />
+      </section>
     )
   }
