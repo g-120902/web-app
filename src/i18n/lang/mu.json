@@ -37,40 +37,40 @@
             "second":"Bann Constants itil pou ban valer ki bisin ress consisten, pou ki code la ress fiab"
           },
           "explanations":{
-            "first":"Once a constant is assigned a value, it cannot be modified.",
+            "first":"Ene fois met ene valer, pas kav modifie",
             "second":"Here is how we define a constant",
             "third":"It should have a name and a value assigned to it",
             "fourth":"Oh no what is happening!",
             "fifth":"Here, let us make the gravity constant, it can't be changed"
           },
           "challenge":{
-            "title":"Now try to create a constant using the items below",
-            "sucess":"Good Job",
-            "failure":"Try again"
+            "title":"Esseye fer enn constant avec ban valer enba",
+            "sucess":"Bon",
+            "failure":"Refere"
           }
         }
       },
       "variable-level":{
-        "title":"Variables",
+        "title":"Variab",
         "next-button":"next",
         "pixel-puff-dialogues":{
           
-          "introduction":"Think of a variable as a special box with a label on it. You can put different things inside this box, and whenever you need to use what's inside, you just look at the label.",
+          "introduction":"Variab se enn boite ar ene nom lor la. To kav met differen zafer dans boite la, ek kan to bisin kitsoz depi ene boite to zis gete nom la.",
           "definitions":{
-            "first":"Variables are similar to constants as they also require a name and a value. However, unlike constants, their values can be changed"
+            "first":"Variab impe coumsa constant. Selma zot valer kav sanze"
           },
           "explanations":{
-            "first":"Naming: As we said the box needs to be labeled for proper identification.",
-            "second":"We cannot simply name them how we want.",
-            "third":"It should have a proper name and a data type.",
-            "fourth":"There are also styles that can be used: camelCaseNaming, snake_case_naming and PascalCaseNaming",
-            "fifth":"Variables have data types that determine what kind of data they can store such as Integer, Float,String and Boolean",
-            "sixth":"Once a variable is defined, it can be used throughout your code"
+            "first":"Nomme: Boite la bisin ene bon nom",
+            "second":"Pas kav servi nimporte ki nom",
+            "third":"Bisin ena enn bon nom ek enn bon type data",
+            "fourth":"Ena impe styl kav servi: camelCaseNaming, snake_case_naming ek PascalCaseNaming",
+            "fifth":"Viariab ena differen type pou kone ki li kav garde couma Integer, Float,String ek Boolean",
+            "sixth":"Ene foi defini to kav servi li partou"
           },
           "challenge":{
-            "title":"Identify the correct variables",
+            "title":"Indentifie variab correct la",
             "sucess":"Correct :D",
-            "failure":"Try again, you can do it"
+            "failure":"Refer :)"
           }
         }
       },
