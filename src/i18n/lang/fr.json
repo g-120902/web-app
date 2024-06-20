@@ -35,7 +35,8 @@
     "queue":"Files",
     "stack":"Piles",
     "linked-list": "Linked List",
-    "binary-tree": "Binary Tree"
+    "binary-tree": "Binary Tree",
+    "dictionary": "Dictionaire"
   },
   "constant-level": {
     "title": "Constantes",

@@ -36,7 +36,8 @@
       "queue":"queue",
       "stack":"stack",
       "linked-list": "linked list",
-      "binary-tree": "binary tree"
+      "binary-tree": "binary tree",
+      "dictionary":  "Dictionary"
     },
     "constant-level": {
       "title":"Constants",
