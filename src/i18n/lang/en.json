@@ -192,6 +192,35 @@
 
     }
   },
+
+  "stack-level":{
+    "title":"Stack",
+    "next-button":"next",
+    "pixel-puff-dialogues":{
+      "introduction":{
+        "first":"Imagine you're playing with a stack of colorful blocks. You start with one block and keep adding more on top, creating a tall tower. ",
+        "second":"When you want to take a block away, you always take the top one first. This stack of blocks is just like a stack in the world of computers!"
+      },
+      "definitions":{
+        "first":"A stack is a way to organize things where you can only add or remove items from the top. ",
+        "second":"Top: The end of the stack where items are added or removed.",
+        "third":"Push: Adding an item to the top of the stack.",
+        "fourth":"Pop: Removing an item from the top of the stack."
+      },
+      "explanations":{
+        "first":"Adding Items (Push): When you add a new block to your stack, you always put it on top of the last block. This keeps your tower growing taller.",
+        "second":"Taking Items (Pop): When you want to take away a block, you always take the top one first. This way, you get the last block you added.",
+        "third":"Order Matters: In a stack, the order you add and remove items is important. You always work with the most recent item first."
+
+      },
+      "challenge":{
+        "title":"Which of the following structures describe a stack",
+        "sucess":"Correct :D",
+        "failure":"Try again, you can do it"
+      }
+
+    }
+  },
     "achievements":{
 
       "constant-achievement":"You are a constant learner",
