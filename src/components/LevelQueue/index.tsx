@@ -63,8 +63,10 @@ export default function Constant({
   ];
 
     const images = [
-        "/assets/images/content/constant/constant1.png" ,
-        "/assets/images/content/constant/constant2.png" // Add more images if needed
+        "/assets/images/content/constant/queue1.png" ,
+        "/assets/images/content/constant/queue2.png", // Add more images if needed
+        "/assets/images/content/constant/queue3.png" // Add more images if needed
+
     ];
 
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -80,14 +82,14 @@ export default function Constant({
             setCurrentTextIndex((prevIndex) => {
                 setAchievementDisplay(false)
                 const nextIndex = (prevIndex + 1) % texts.length;
-                if (texts[nextIndex] === exSecond) {
+                if (texts[nextIndex] === def) {
                     setCurrentImageIndex(0);
-                } else if (texts[nextIndex] === exFirst) {
+                } else if (texts[nextIndex] === defFourth) {
                     setCurrentImageIndex(1);
-                } else if (texts[nextIndex] === exSecond) {
+                } else if (texts[nextIndex] === defFifth) {
                     setCurrentImageIndex(2);
                 } else if (texts[nextIndex] === chalFirst) {
-                    setStopDisplay(true)
+                    //made it so that 4 pictures appear here at the same time i can can select one
                 } 
                 return nextIndex;
             });
@@ -99,7 +101,7 @@ export default function Constant({
             setCurrentTextIndex((prevIndex) => {
                 const nextIndex = (prevIndex + 1) % texts.length;
                 setCurrentImageIndex(-1);
-                setAchievement("constant", true)
+                setAchievement("queue", true)
                 setAchievementDisplay(true)
                 setStopDisplay(false)
                 return nextIndex;
