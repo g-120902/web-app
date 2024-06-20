@@ -5,15 +5,19 @@ import Image from "next/image";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 
-type LevelConstantProps = {
+type LevelStackProps = {
   intro: string;
+  introSec: string;
+
   def: string;
   defSecond: string;
+  defThird: string;
+  defFourth: string;
+
   exFirst: string;
   exSecond: string;
   exThird: string;
-  exFourth: string;
-  exFifth: string;
+
   chalFirst: string;
   chalSuccess: string;
   chalFailure: string;
@@ -21,26 +25,34 @@ type LevelConstantProps = {
 
 export default function Constant({
   intro,
+  introSec,
+
   def,
   defSecond,
+  defThird,
+  defFourth,
+
   exFirst,
   exSecond,
   exThird,
-  exFourth,
-  exFifth,
+
   chalFirst,
   chalSuccess,
   chalFailure,
-}: LevelConstantProps): JSX.Element {
+
+}: LevelStackProps): JSX.Element {
   const texts = [
     intro,
+    introSec,
+
     def,
     defSecond,
+    defThird,
+    defFourth,
+  
     exFirst,
     exSecond,
     exThird,
-    exFourth,
-    exFifth,
     chalFirst,
     chalSuccess,
     chalFailure,
