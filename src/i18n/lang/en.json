@@ -39,14 +39,14 @@
         "explanations":{
           "first":"Once a constant is assigned a value, it cannot be modified.",
           "second":"Here is how we define a constant",
-          "third":"It should have a name and a value assigned to it",
-          "fourth":"Oh no what is happening!",
-          "fifth":"Here, let us make the gravity constant, it can't be changed"
+          "third":"It should have a name and value(s) assigned to it",
+          "fourth":"Here I defined gravity, an essential physical property to you humans",
+          "fifth":"You see my father needs it to remain on the ground",
+          "sixth":"Look at him enjoying my constant"
         },
         "challenge":{
-          "title":"Now try to create a constant using the items below",
-          "sucess":"Good Job",
-          "failure":"Try again"
+          "title":"Now try to move my father",
+          "sucess":"Good try but in fact constants are declared and then cannot be modified"
         }
       }
     },
