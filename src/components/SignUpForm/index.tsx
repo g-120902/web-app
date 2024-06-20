@@ -10,7 +10,7 @@ import CustomButton from "../common/CustomButton";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { ExclamationCircleIcon } from "@heroicons/react/24/outline";
-import addUserinfo, {addUserInfoResponse } from "../common/firebase/db/addUserInfo";
+import addUserinfo, {addUserInfoResponse } from "../common/firebase/db/addUserinfo";
 
 /**
  * This contain the login page
