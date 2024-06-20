@@ -38,15 +38,15 @@
           },
           "explanations":{
             "first":"Ene fois met ene valer, pas kav modifie",
-            "second":"Here is how we define a constant",
-            "third":"It should have a name and a value assigned to it",
-            "fourth":"Oh no what is happening!",
-            "fifth":"Here, let us make the gravity constant, it can't be changed"
+            "second": "Nu cree ene constant coumsa",
+            "third": "Bisin ena ene nom ek ene valer",
+            "fourth": "Mon define gravite coumsa, ene zafer importan pou zot humain.",
+            "fifth": "Gete mo papa bisin ress lor sali",
+            "sixth": "Gete couma li contant ar mo constant"
           },
           "challenge":{
-            "title":"Esseye fer enn constant avec ban valer enba",
-            "sucess":"Bon",
-            "failure":"Refere"
+            "title":"Esseye bouz mo papa",
+            "sucess":"Bien seye me, selma constant pas kav modifie."
           }
         }
       },
@@ -135,27 +135,27 @@
       "next-button":"next",
       "pixel-puff-dialogues":{
         "introduction":{
-          "first":"Imagine a tree in your backyard. It has a big, strong trunk and lots of branches, and each branch might have more branches, leaves, and maybe even some fruits",
-          "second":"This is what a tree data structure looks like in the world of computers!"
+          "first":"Imazin ena ene pie dans to zardin. Li ena buku brans, fei ek fri",
+          "second":"Coumsa em data structure Tree paret lor to computer!"
         },
         "definitions":{
-          "first":"Root: The root is like the trunk of the tree. It's the starting point and holds the most important information.",
-          "second":"Nodes: Each point on the tree where the branches split or end is called a node. Nodes hold pieces of information.",
-          "third":"Branches (Edges): These are the lines that connect the nodes, just like branches connect the trunk to the leaves.",
-          "fourth":"Leaves: These are the nodes at the very end of the branches. They don't have any more branches coming out of them.",
-          "fifth":"Parent and Child: If one node is connected directly to another below it, the upper node is the parent, and the lower node is the child."
+          "first":"Root: Tron pie la sa. Laba em li coumanse ek ena detailpli importan laba",
+          "second":"Nodes: Sak point cot enn brans separe se ene node. Nodes ena ban informasion",
+          "third":"Branches (Edges): saem ban branss ki connecte ar ban nodes, parey couma brans connec tron ar fei",
+          "fourth":"Leaves: se ban node ki a la fin. Branss pas sorti ar zot.",
+          "fifth":"Parent ek zenfant: si ene node ena ene connection direk laho li, tseki laho la se parent, enba la se zenfant."
         },
         "explanations":{
-          "first":"Adding Information: Just like you can add more branches to a tree, you can add more information to a tree data structure.",
-          "second":"New nodes can grow from existing nodes, like new branches growing from the trunk or other branches.",
-          "third":"Finding Information: If you want to find something in the tree, you start at the root and follow the branches until you reach the right node",
-          "fourth":"Organizing Information: Trees help organize information in a way that makes it easy to see relationships and hierarchies.",
-          "fifth":"Below is an example of a tree for Subjects at school"
+          "first":"Azoute Informasion: kapav azout infoemasion lor ene tree data structure.",
+          "second":"kav gagn nouvo node depi ancien node, parey couma branss pouss depi lezot branss",
+          "third":"Rod Informasion: Si bisin kitsoz lor pis, commence lor root lerla aller em suive ban branss ziska gagne bon node",
+          "fourth":"Organize Informasion: Pie aider pou trouve ban relation ek ban hierarchi.",
+          "fifth":"Enba ena enn example pou enn pie pou ban Size dan lekol"
         },
         "challenge":{
-          "title":"Select the root and a leaf node in the image below",
+          "title":"Soizir root ek leave lor pie emba la",
           "sucess":"Correct :D",
-          "failure":"Try again, you can do it"
+          "failure":"Refer"
         }
   
       }
@@ -163,31 +163,31 @@
   
   
     "queue-level":{
-      "title":"Queues",
+      "title":"Lake",
       "next-button":"next",
       "pixel-puff-dialogues":{
         "introduction":{
-          "first":"Imagine you're waiting in line for your turn to ride the roller coaster at an amusement park. ",
-          "second":"There's a line of excited kids, and each one waits patiently for their turn to hop on the coaster",
-          "third":"This waiting line is just like a queue in the world of computers!"
+          "first":"Zot pe attan zot tour pou mont lor manez dans parc. ",
+          "second":"Ena enn lalign zanfan, ek saken pe attan zot tour pou mont lor manez",
+          "third":"Se ene laligne parey couma ene lake dans computer !"
         },
         "definitions":{
-          "first":"Queue Definitions",
-          "second":"Front: The beginning of the line, where the first item is waiting.",
-          "third":"Rear (or Back): The end of the line, where new items are added.",
-          "fourth":"Enqueue: Adding an item to the rear of the queue.",
-          "fifth":"Dequeue: Removing an item from the front of the queue."
+          "first":"Definision dans ban lake",
+          "second":"Front: laba eme coumansemen, cot premier dimun item pe atan",
+          "third":"Rear: TPar deriere lake.",
+          "fourth":"Enqueue: Kan azout item par deriere lake.",
+          "fifth":"Dequeue: Kan tire item par divant lake"
         },
         "explanations":{
-          "first":"Joining the Queue: When you arrive at the ice cream truck, you join the end of the line. This is like adding an item to the rear of the queue.",
-          "second":"Getting Served: When it's your turn at the ice cream truck, you go to the front of the line and get your ice cream. This is like removing an item from the front of the queue.",
-          "third":"Order Matters: In a queue, the order you join is the order you get served. It's fair because everyone waits their turn."
+          "first":"Rentre dan lake: Kan to arrive kot camion laglas, to rentre depi parderiere. Sa se enqueue",
+          "second":"Servi toi: Kan arrive to tour to par divant. Sa se dequeue",
+          "third":"Lord ena linportans: Dans ene lake seki vin avant sorti avant. Saken atta so tour"
   
         },
         "challenge":{
-          "title":"Sam needs to wait for his turn to get ice cream, click on the people that needs to be served first in the correct order.",
+          "title":"Sam bisin attan so tour pou gagn laglass, click lor dimoun ki bisin aller avant li",
           "sucess":"Correct :D",
-          "failure":"Try again, you can do it"
+          "failure":"Refer :)"
         }
   
       }
