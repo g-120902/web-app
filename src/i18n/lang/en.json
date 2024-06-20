@@ -28,8 +28,10 @@
       "language": "language"
     },
     "constant-level": {
+      "title":"Constants",
+      "next-button":"next",
       "pixel-puff-dialogues":{
-        "introduction":"Our world is an ever changing one, but everything needs a balance. Some properties cannot be changed for if they are, great calamity will fall upon us",
+        "introduction":"Our world is an ever changing one, but everything needs a balance. Some properties cannot be changed like gravity",
         "definitions":{
           "first":"In the programming world, a constant is a value that, once defined, cannot be altered by the program during its execution.",
           "second":"Constants are useful for values that need to be consistent and unchanging, ensuring reliability and predictability in the code"
@@ -56,7 +58,63 @@
         }
       }
     },
+    "variable-level":{
+      "title":"Variables",
+      "next-button":"next",
+      "level-one":{
+
+        "pixel-puff-dialogues":{
+          
+          "introduction":"Think of a variable as a special box with a label on it. You can put different things inside this box, and whenever you need to use what's inside, you just look at the label.",
+          "definitions":{
+            "first":"Variables are similar to constants as they also require a name and a value. However, unlike constants, their values can be changed"
+          },
+          "explanations":{
+            "first":"Naming: As we said the box needs to be labeled for proper identification.",
+            "second":"We cannot simply name them how we want. There is a proper way to name them",
+            "third":"A variable cannot start with a number nor have spaces in it. It may start with an underscore. The name is also case sensitive ",
+            "fourth":"A meaningful name so that we can know what kind of data is in it, not simply a or b for example",
+            "fifth":"There are also styles that can be used",
+            "sixth":"camelCaseNaming",
+            "seventh":"snake_case_naming",
+            "eigth":"PascalCaseNaming"
+          },
+          "challenge":{
+            "title":"Identify the correct variable name",
+            "sucess":"Correct :D",
+            "failure":"Try again, you can do it"
+          }
+        }
+      },
+      "level-two":{
+
+        "pixel-puff-dialogues":{
+
+          "introduction":"Different kind of contents can be placed inside a box",
+          "definitions":{
+            "first":"Variables have data types that determine what kind of data they can store",
+            "second":"Each variable can have a specific type",
+            "third":"Once a variable is defined, it can be used throughout your code"
+          },
+          "explanations":{
+            "first":"I will tell you about the basic types that can be defined",
+            "second":"Integers : whole numbers such as 1,2,3",
+            "third":"Float: Decimal numbers such as 1.1, 5.5 , 79.1",
+            "fourth":"String: data enclosed between double quotes",
+            "fifth":"Boolean: True or False"
+          },
+          "challenge":{
+            "title":"Assign the correct types",
+            "sucess":"You go champ",
+            "failure":"Try again, you can do it"
+          }
+        }
+      }
+    },
     "achievements":{
+
+      "constant-achievement":"You are a constant learner",
+      "variable-achievement":"Changes are inevitable"
 
 
     }
