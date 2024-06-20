@@ -33,7 +33,9 @@
     "array":"Tableaux",
     "tree":"Arbres",
     "queue":"Files",
-    "stack":"Piles"
+    "stack":"Piles",
+    "linked-list": "Linked List",
+    "binary-tree": "Binary Tree"
   },
   "constant-level": {
     "title": "Constantes",

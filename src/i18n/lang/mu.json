@@ -34,7 +34,9 @@
         "array":"Array",
         "tree":"Pie",
         "queue":"Lake",
-        "stack":"Stack"
+        "stack":"Stack",
+        "linked-list": "Linked List",
+        "binary-tree": "Binary Tree"
       },
       "constant-level": {
         "title":"Constants",
