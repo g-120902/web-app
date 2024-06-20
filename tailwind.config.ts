@@ -2,7 +2,7 @@ import type { Config } from 'tailwindcss'
 
 // MAIN COLORS
 const mainColors = {
-  "default": "#AA4D47",
+  "default": "#141212",
   "base-gray": "#101112980",
   "base-white": "#FFFFFF80",
   "neon": "#23bffd",
