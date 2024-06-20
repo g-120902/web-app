@@ -223,6 +223,8 @@
     "array": "Array-tastique!",
     "tree": "Arbre-tremendable!",
     "queue": "File-tifique!",
-    "stack": "Pile-tastique!"
+    "stack": "Pile-tastique!",
+    "dictionary": "Dico-Fantastique !",
+    "linkedlist": "Liens Magiques"
 }
 }

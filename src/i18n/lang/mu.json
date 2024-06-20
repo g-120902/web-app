@@ -235,9 +235,11 @@
         "variable":"Sanzemen ress vini",
         "loop":"Tourne tourne",
         "array":"Array-tastik!",
-        "tree":"Pie-ni ",
+        "bianry_tree":"Pie-ni ",
         "queue":"Long Lake!",
-        "stack":"StackMan"
+        "stack":"StackMan",
+        "dictionary": "Dicsioner mazik !",
+        "linkedlist": "Ban lien"
       }
     
   }
