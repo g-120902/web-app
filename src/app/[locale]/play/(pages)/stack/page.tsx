@@ -1,10 +1,10 @@
 'use client';
 
-import LevelVariable from "@/components/LevelVariable";
+import LevelConstant from "@/components/LevelConstent";
 import { useTranslations } from "next-intl";
 
 export default function Constant() {
-  const t = useTranslations("variable-level");
+  const t = useTranslations("constant-level");
 
   // Fetch data using translations
   const intro = t("pixel-puff-dialogues.introduction");
@@ -16,24 +16,21 @@ export default function Constant() {
   const exThird = t("pixel-puff-dialogues.explanations.third");
   const exFourth = t("pixel-puff-dialogues.explanations.fourth");
   const exFifth = t("pixel-puff-dialogues.explanations.fifth");
-  const exSix = t("pixel-puff-dialogues.explanations.sixth");
-  const exSev = t("pixel-puff-dialogues.explanations.seventh");
 
   const chalFirst = t("pixel-puff-dialogues.challenge.first");
   const chalSuccess = t("pixel-puff-dialogues.challenge.sucess");
   const chalFailure = t("pixel-puff-dialogues.challenge.failure");
 
   return (
-    <LevelVariable
+    <LevelConstant
       intro={intro}
       def={defFirst}
+      defSecond={defSecond}
       exFirst={exFirst}
       exSecond={exSecond}
       exThird={exThird}
       exFourth={exFourth}
       exFifth={exFifth}
-      exSix= {exSix}
-      exSev= {exSev}
       chalFirst={chalFirst}
       chalSuccess={chalSuccess}
       chalFailure={chalFailure}

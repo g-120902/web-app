@@ -44,7 +44,7 @@
           "fifth":"Here, let us make the gravity constant, it can't be changed"
         },
         "challenge":{
-          "first":"Now try to create a constant using the items below",
+          "title":"Now try to create a constant using the items below",
           "sucess":"Good Job",
           "failure":"Try again"
         }

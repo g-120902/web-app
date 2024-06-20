@@ -1,47 +1,39 @@
-'use client'
+'use client';
 
-import LevelBase from "@/components/LevelBase";
+import LevelConstant from "@/components/LevelConstent";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
 
-export default function Constant(): JSX.Element {
+export default function Constant() {
   const t = useTranslations("constant-level");
 
-  const [intro, setPixelPuff] = useState(t("pixel-puff-dialogues.introduction"));
-  const [def, setDef] = useState(t("pixel-puff-dialogues.definitions.first"));
-  const [defSecond, setDefSecond] = useState(t("pixel-puff-dialogues.definitions.second"));
+  // Fetch data using translations
+  const intro = t("pixel-puff-dialogues.introduction");
+  const defFirst = t("pixel-puff-dialogues.definitions.first");
+  const defSecond = t("pixel-puff-dialogues.definitions.second");
 
-  const [charFirst, setCharFirst] = useState(t("pixel-puff-dialogues.characteristics.first"));
-  const [charSecond, setCharSecond] = useState(t("pixel-puff-dialogues.characteristics.second"));
-  const [charThird, setCharThird] = useState(t("pixel-puff-dialogues.characteristics.third"));
+  const exFirst = t("pixel-puff-dialogues.explanations.first");
+  const exSecond = t("pixel-puff-dialogues.explanations.second");
+  const exThird = t("pixel-puff-dialogues.explanations.third");
+  const exFourth = t("pixel-puff-dialogues.explanations.fourth");
+  const exFifth = t("pixel-puff-dialogues.explanations.fifth");
 
-  const [exFirst, setExFirst] = useState(t("pixel-puff-dialogues.examples.first"));
-  const [exSecond, setExSecond] = useState(t("pixel-puff-dialogues.examples.second"));
-
-  const [exerFirst, setExerFirst] = useState(t("pixel-puff-dialogues.exercices.first"));
-  const [exerSuccess, setExerSuccess] = useState(t("pixel-puff-dialogues.exercices.sucess"));
-  const [exerFailure, setExerFailure] = useState(t("pixel-puff-dialogues.exercices.failure"));
-
-  const [chalFirst, setChalFirst] = useState(t("pixel-puff-dialogues.challenge.first"));
-  const [chalSecond, setChalSecond] = useState(t("pixel-puff-dialogues.challenge.second"));
-  const [chalSuccess, setChalSuccess] = useState(t("pixel-puff-dialogues.challenge.sucess"));
+  const chalFirst = t("pixel-puff-dialogues.challenge.title");
+  const chalSuccess = t("pixel-puff-dialogues.challenge.sucess");
+  const chalFailure = t("pixel-puff-dialogues.challenge.failure");
 
   return (
-    <LevelBase 
-      intro={intro} 
-      def={def} 
+    <LevelConstant
+      intro={intro}
+      def={defFirst}
       defSecond={defSecond}
-      charFirst={charFirst}
-      charSecond={charSecond}
-      charThird={charThird}
       exFirst={exFirst}
       exSecond={exSecond}
-      exerFirst={exerFirst}
-      exerSuccess={exerSuccess}
-      exerFailure={exerFailure}
+      exThird={exThird}
+      exFourth={exFourth}
+      exFifth={exFifth}
       chalFirst={chalFirst}
-      chalSecond={chalSecond}
       chalSuccess={chalSuccess}
+      chalFailure={chalFailure}
     />
   );
 }

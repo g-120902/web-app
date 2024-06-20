@@ -1,56 +1,63 @@
+'use client';
+
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 
-type LevelBaseProps = {
-    intro: string;
-    def: string;
-    defSecond: string;
-    charFirst: string;
-    charSecond: string;
-    charThird: string;
-    exFirst: string;
-    exSecond: string;
-    exerFirst: string;
-    exerSuccess: string;
-    exerFailure: string;
-    chalFirst: string;
-    chalSecond: string;
-    chalSuccess: string;
+type LevelBinaryTreeProps = {
+  intro: string;
+  introSec: string;
+
+  def: string;
+  defSecond: string;
+  defThird: string;
+  defFourth: string;
+  defFifth: string;
+  exFirst: string;
+  exSecond: string;
+  exThird: string;
+  exFourth: string;
+  exFifth: string;
+  chalFirst: string;
+  chalSuccess: string;
+  chalFailure: string;
 };
 
-export default function LevelBase({
+export default function Constant({
+  intro,
+  introSec,
+  def,
+  defSecond,
+  defThird,
+  defFourth,
+  defFifth,
+  exFirst,
+  exSecond,
+  exThird,
+  exFourth,
+  exFifth,
+  chalFirst,
+  chalSuccess,
+  chalFailure,
+}: LevelBinaryTreeProps): JSX.Element {
+  const texts = [
     intro,
+    introSec,
     def,
     defSecond,
-    charFirst,
-    charSecond,
-    charThird,
+    defThird,
+    defFourth,
+    defFifth,
     exFirst,
     exSecond,
-    exerFirst,
-    exerSuccess,
-    exerFailure,
+    exThird,
+    exFourth,
+    exFifth,
     chalFirst,
-    chalSecond,
-    chalSuccess
-}: LevelBaseProps): JSX.Element {
-    const texts = [
-        intro,
-        def,
-        defSecond,
-        charFirst,
-        charSecond,
-        charThird,
-        exFirst,
-        exSecond,
-        exerFirst,
-        exerSuccess,
-        exerFailure,
-        chalFirst,
-        chalSecond,
-        chalSuccess
-    ];
+    chalSuccess,
+    chalFailure,
+  ];
 
     const images = [
         "/assets/images/content/constant/constant1.png" ,
