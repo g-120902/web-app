@@ -130,6 +130,36 @@
       }
    },
 
+   "tree-level":{
+    "title":"Trees",
+    "next-button":"next",
+    "pixel-puff-dialogues":{
+      "introduction":{
+        "first":"Imagine a tree in your backyard. It has a big, strong trunk and lots of branches, and each branch might have more branches, leaves, and maybe even some fruits",
+        "second":"This is what a tree data structure looks like in the world of computers!"
+      },
+      "definitions":{
+        "first":"Root: The root is like the trunk of the tree. It’s the starting point and holds the most important information.",
+        "second":"Nodes: Each point on the tree where the branches split or end is called a node. Nodes hold pieces of information.",
+        "third":"Branches (Edges): These are the lines that connect the nodes, just like branches connect the trunk to the leaves.",
+        "fourth":"Leaves: These are the nodes at the very end of the branches. They don’t have any more branches coming out of them.",
+        "fifth":"Parent and Child: If one node is connected directly to another below it, the upper node is the parent, and the lower node is the child."
+      },
+      "explanations":{
+        "first":"Adding Information: Just like you can add more branches to a tree, you can add more information to a tree data structure.",
+        "second":"New nodes can grow from existing nodes, like new branches growing from the trunk or other branches.",
+        "third":"Finding Information: If you want to find something in the tree, you start at the root and follow the branches until you reach the right node",
+        "fourth":"Organizing Information: Trees help organize information in a way that makes it easy to see relationships and hierarchies.",
+        "fifth":"Below is an example of a tree for Subjects at school"
+      },
+      "challenge":{
+        "title":"Select the root and a leaf node in the image below",
+        "sucess":"Correct :D",
+        "failure":"Try again, you can do it"
+      }
+
+    }
+ },
 
 
 
