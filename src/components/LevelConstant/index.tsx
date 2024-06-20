@@ -4,7 +4,6 @@ import Image from "next/image";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
 import { useAchievements } from "@/context/AchievementContext";
 
 type LevelConstantProps = {
