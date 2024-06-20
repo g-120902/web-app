@@ -11,6 +11,7 @@ export default function Play(): JSX.Element {
     const [userTokenJson, setUserTokenJson] = useState<Record<string, any> | null>(null);
     const [email, setEmail] = useState("")
     const t = useTranslations("home")
+    
     useEffect(() => {
         if (CheckLogin()) {
             const userTokenString = localStorage.getItem('userInfo')

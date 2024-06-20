@@ -46,6 +46,3 @@ export async function fetchUserAchievements(userId: string): Promise<Achievement
     }
 
 }
-
-
-

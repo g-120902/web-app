@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import SideBar from "@/components/SideBar";
 import { AuthProvider } from "@/context/AuthContext";
+import { AchievementProvider } from "@/context/AchievementContext";
 
 
 export default function RootLayout({
@@ -25,15 +26,16 @@ export default function RootLayout({
       <body suppressHydrationWarning={true} className='font-primary-normal overflow-x-clip'>
         <NextIntlClientProvider locale={params.locale} messages={messages}>
           <AuthProvider>
+            <AchievementProvider >
+              <SideBar />
+              <main>
+                <div>
+                  {children}
+                </div>
+              </main>
+            </AchievementProvider>
 
-            <SideBar />
-            <main>
-              <div>
-                {children}
-              </div>
-            </main>
           </AuthProvider>
-
         </NextIntlClientProvider>
 
       </body>

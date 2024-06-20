@@ -1,45 +1,35 @@
-import React, { useEffect, useState } from "react";
-import { fetchUserAchievements, Achievement } from "@/components/common/firebase/db/getAchivement";
+'use client'
 
-export default function AchievementPage({ userId }: { userId: string }): JSX.Element {
-    const [achievements, setAchievements] = useState<Achievement[]>([]);
-    const [loading, setLoading] = useState(true);
+import { useAchievements } from "@/context/AchievementContext";
+import { useTranslations } from "next-intl";
+import { CheckIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
-    useEffect(() => {
-        const fetchAchievements = async () => {
-            const updatedAchievements = await fetchUserAchievements(userId);
-            setAchievements(updatedAchievements);
-            setLoading(false);
-        };
-
-        fetchAchievements();
-    }, [userId]);
-
-    const toggleAchievementStatus = async (achievementName: string, currentStatus: boolean) => {
-        setAchievements(prevAchievements =>
-            prevAchievements.map(ach =>
-                ach.name === achievementName ? { ...ach, status: !currentStatus } : ach
-            )
-        );
-    };
-
-    if (loading) {
-        return <div>Loading achievements...</div>;
-    }
+export default function AchievementPage(): JSX.Element {
+    const { achievements } = useAchievements();
+    const t = useTranslations()
 
     return (
-        <div>
-            <h1>Achievements</h1>
-            <ul>
-                {achievements.map(achievement => (
-                    <li key={achievement.name}>
-                        {achievement.name}: {achievement.status ? "Completed" : "Incomplete"}
-                        <button onLoad={() => toggleAchievementStatus(achievement.name, achievement.status)}>
-                            Toggle Status
-                        </button>
-                    </li>
-                ))}
-            </ul>
+        <div className="flex justify-center items-center h-screen">
+            <div className="text-center bg-base-white w-2/5 h-full flex justify-center items-center flex-col shadow-inner shadow-black">
+                <h1 className="text-4xl font-bold mb-4 font-primary-bold uppercase text-black">{t('side-bar.achievements')}</h1>
+                <div className="flex flex-col items-start font-robot gap-3 w-full px-20">
+                    {Object.keys(achievements).map(key => {
+                        const typedKey = key as keyof typeof achievements;
+                        return (
+                            <div key={typedKey} className={`bg-black px-5 py-2 text-lg rounded-2xl  grid grid-cols-2 gap-4 w-full ${achievements[typedKey] ? `text-green-600` : `text-red-700`}`}>
+                                <p className="whitespace-nowrap ">
+                                    {'- ' + t("achievements."+typedKey)}
+                                </p>
+                                <XMarkIcon className={`${achievements[typedKey] ? `hidden` : `h-8 w-8`}`} />
+                                <CheckIcon className={`${achievements[typedKey] ? `h-8 w-8` : `hidden`}`} />
+
+                            </div>
+
+                        );
+                    })}
+                </div>
+            </div>
         </div>
+
     );
 }
