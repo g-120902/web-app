@@ -1,13 +1,25 @@
 'use client'
 
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { useAchievements } from "@/context/AchievementContext";
 import { useTranslations } from "next-intl";
 import { CheckIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function AchievementPage(): JSX.Element {
+    const [hasRefreshed, setHasRefreshed] = useState(false);
+    const router = useRouter();
     const { achievements } = useAchievements();
-    const t = useTranslations()
+    const t = useTranslations();
 
+    useEffect(() => {
+        if (!hasRefreshed) {
+            setHasRefreshed(true);
+            router.refresh(); // Forces a page refresh
+        }
+    }, [hasRefreshed, router]);
+
+  
     return (
         <div className="flex justify-center items-center h-screen">
             <div className="text-center bg-base-white w-2/5 h-full flex justify-center items-center flex-col shadow-inner shadow-black">
@@ -22,14 +34,11 @@ export default function AchievementPage(): JSX.Element {
                                 </p>
                                 <XMarkIcon className={`${achievements[typedKey] ? `hidden` : `h-8 w-8`}`} />
                                 <CheckIcon className={`${achievements[typedKey] ? `h-8 w-8` : `hidden`}`} />
-
                             </div>
-
                         );
                     })}
                 </div>
             </div>
         </div>
-
     );
 }

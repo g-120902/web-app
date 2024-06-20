@@ -2,7 +2,7 @@
 import AchievementPage from "@/components/AchivementList";
 
 const AchievementsPage = () => {
-
+    
     return (
         <div>
             <AchievementPage/>

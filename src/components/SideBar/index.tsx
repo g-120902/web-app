@@ -12,6 +12,7 @@ import { removeData } from '@/utils/storage';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useAuth } from '@/context/AuthContext';
 import { checkLogin } from '@/utils/helper';
+import { useRouter } from 'next/navigation';
 
 export default function SideBar(): JSX.Element {
     const isLargeScreen = useMediaQuery({ query: '(min-width: 768px)' });
@@ -21,6 +22,7 @@ export default function SideBar(): JSX.Element {
     const [loginAction, setLoginAction] = useState('login');
     const [width, setWidth] = useState(28);
     const { isLoggedIn, setLoggedIn } = useAuth();
+    const router = useRouter();
 
     const handleHovered = () => {
         setIsHovered(!isHovered);
@@ -44,11 +46,18 @@ export default function SideBar(): JSX.Element {
     };
 
     const logOut = () => {
+
         removeData('achievements')
+        if (localStorage.getItem('achievements') === null) {
+            console.log('Item successfully removed.');
+        } else {
+            console.log('Item still exists.');
+        }
         removeData('login');
         removeData('userInfo')
         setLoginAction('login');
-        setLoggedIn(false)
+        setLoggedIn(false);
+        router.push('/');
     };
 
     const t = useTranslations('side-bar');
