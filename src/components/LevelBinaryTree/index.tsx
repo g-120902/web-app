@@ -14,11 +14,13 @@ type LevelBinaryTreeProps = {
   defThird: string;
   defFourth: string;
   defFifth: string;
+
   exFirst: string;
   exSecond: string;
   exThird: string;
   exFourth: string;
   exFifth: string;
+  
   chalFirst: string;
   chalSuccess: string;
   chalFailure: string;
