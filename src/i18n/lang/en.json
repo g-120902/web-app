@@ -27,6 +27,15 @@
       "achievements": "achievements",
       "language": "language"
     },
+    "levels": {
+      "constant": "constant",
+      "variable":"variable",
+      "loop":"loop",
+      "array":"array",
+      "tree":"tree",
+      "queue":"queue",
+      "stack":"stack"
+    },
     "constant-level": {
       "title":"Constants",
       "next-button":"next",

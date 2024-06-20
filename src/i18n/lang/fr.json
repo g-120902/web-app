@@ -26,6 +26,15 @@
     "achievements": "exploits",
     "language": "langue"
   },
+  "levels": {
+    "constant": "Constantes",
+    "variable":"Variables",
+    "loop":"Boucles",
+    "array":"Tableaux",
+    "tree":"Arbres",
+    "queue":"Files",
+    "stack":"Piles"
+  },
   "constant-level": {
     "title": "Constantes",
     "next-button": "Suivant",

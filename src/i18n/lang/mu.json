@@ -25,7 +25,16 @@
         "login": "log in",
         "logout": "log out",
         "achievements": "exploits",
-        "language": "labgaz"
+        "language": "langaz"
+      },
+      "levels": {
+        "constant": "Constants",
+        "variable":"Variab",
+        "loop":"Loop",
+        "array":"Array",
+        "tree":"Pie",
+        "queue":"Lake",
+        "stack":"Stack"
       },
       "constant-level": {
         "title":"Constants",
@@ -131,7 +140,7 @@
      },
   
      "tree-level":{
-      "title":"Trees",
+      "title":"Pie",
       "next-button":"next",
       "pixel-puff-dialogues":{
         "introduction":{
@@ -198,38 +207,37 @@
       "next-button":"next",
       "pixel-puff-dialogues":{
         "introduction":{
-          "first":"Imagine you're playing with a stack of colorful blocks. You start with one block and keep adding more on top, creating a tall tower. ",
-          "second":"When you want to take a block away, you always take the top one first. This stack of blocks is just like a stack in the world of computers!"
+          "first":"To pe zwe ar ene ta brik couler. To coumanse par ene ek to ress azoute laho, pou fer ene latour. ",
+          "second":"Kan to envi tir ene brik, to pren net seki laho net. Saem appel ene stack!"
         },
         "definitions":{
-          "first":"A stack is a way to organize things where you can only add or remove items from the top. ",
-          "second":"Top: The end of the stack where items are added or removed.",
-          "third":"Push: Adding an item to the top of the stack.",
-          "fourth":"Pop: Removing an item from the top of the stack."
+          "first":"Ene stack se enn facon kot to kav zis azoute ek retirer depi laho. ",
+          "second":"Top: Lafin stack kot azouter ek retire item.",
+          "third":"Push: Azoute laho.",
+          "fourth":"Pop: Retir depi laho."
         },
         "explanations":{
-          "first":"Adding Items (Push): When you add a new block to your stack, you always put it on top of the last block. This keeps your tower growing taller.",
-          "second":"Taking Items (Pop): When you want to take away a block, you always take the top one first. This way, you get the last block you added.",
-          "third":"Order Matters: In a stack, the order you add and remove items is important. You always work with the most recent item first."
+          "first":"Azoute Items (Push): Kan to azoute ene nouvo brik, to met li laho net. Latour ress grandi.",
+          "second":"RetireItems (Pop): WLan to tir brik, To tir zis seki laho. To gagn dernier seki ton azoute.",
+          "third":"Lord ena linportans: Tous le temp dernier rentrer ki premier sorti"
   
         },
         "challenge":{
-          "title":"Which of the following structures describe a stack",
+          "title":"Lakel represent enn stack",
           "sucess":"Correct :D",
-          "failure":"Try again, you can do it"
+          "failure":"Refer :)"
         }
   
       }
     },
       "achievements":{
-        "constant":"You are a constant learner",
-        "variable":"Changes are inevitable",
-        "loop":"loop a loop",
-        "array":"Array-tastic!",
-        "tree":"Tree-mendous! ",
-        "queue":"Queue-tiful!",
-        "stack":"Stack-tacular!"
-  
+        "constant":"To ress constamen appran",
+        "variable":"Sanzemen ress vini",
+        "loop":"Tourne tourne",
+        "array":"Array-tastik!",
+        "tree":"Pie-ni ",
+        "queue":"Long Lake!",
+        "stack":"StackMan"
       }
     
   }
