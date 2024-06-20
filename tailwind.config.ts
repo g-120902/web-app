@@ -4,6 +4,7 @@ import type { Config } from 'tailwindcss'
 const mainColors = {
   "default": "#AA4D47",
   "base-gray": "#101112980",
+  "base-white": "#FFFFFF80",
   "neon": "#23bffd",
   "bubblegum": "#d60b63"
 }
@@ -54,6 +55,7 @@ const config: Config = {
         'primary-normal': ['Roboto-Regular', 'sans-serif'],
         'primary-bold': ['Roboto-Bold', 'sans-serif'],
         'primary-light': ['Roboto-Light', 'sans-serif'],
+        'robot': ['Pixel']
       },
       height: {
         '0.5': '0.1rem',
